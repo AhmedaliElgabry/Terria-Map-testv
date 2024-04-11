@@ -1,0 +1,50 @@
+.show-selected-filter {
+  margin: 10px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    background: transparent;
+    font-size: 0.625rem;
+    border: none;
+  }
+
+  small {
+    display: inline-block;
+    span {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}
+
+.change-selected-filter {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  border-radius: 4px;
+
+  label {
+    cursor: pointer;
+    margin-right: 10px;
+
+    input[type="radio"] {
+      margin-right: 2px;
+      cursor: pointer;
+    }
+  }
+
+  legend {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    fill: white;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,153 @@
+@import "~terriajs-variables";
+.btnLogin {
+  composes: btn from "../../../../Sass/common/_buttons.scss";
+  composes: btn--map from "../../../../Sass/common/_buttons.scss";
+  border-radius: $radius-small;
+  border: 0;
+
+  span {
+    line-height: 1.3;
+  }
+
+  &:hover,
+  &:focus {
+    border: 0;
+    svg {
+      fill: #ffffff;
+    }
+  }
+}
+
+.profile-button {
+  composes: btn from "../../../../Sass/common/_buttons.scss";
+  composes: btn--map from "../../../../Sass/common/_buttons.scss";
+  border-radius: $radius-small;
+  border: 0;
+  margin-bottom: 2px;
+  max-height: 28px;
+  svg {
+    fill: #9ca1aa;
+    margin: 0 3px 0 4px;
+    vertical-align: bottom;
+  }
+
+  span {
+    line-height: 1.3;
+  }
+
+  &:hover,
+  &:focus {
+    border: 0;
+    svg {
+      fill: #ffffff;
+    }
+  }
+  float: right;
+}
+
+.profile-panel {
+}
+
+.dropdown-inner {
+  width: $profile-panel;
+}
+
+.viewer-selector,
+.base-map-selector {
+  composes: clearfix from "../../../../Sass/common/_base.scss";
+  composes: list-reset from "../../../../Sass/common/_base.scss";
+
+  margin: 0 -$padding-mini;
+}
+
+.list-item {
+  padding: $padding-mini;
+
+  composes: col from "../../../../Sass/common/_base.scss";
+  composes: col-4 from "../../../../Sass/common/_base.scss";
+}
+
+.btn--viewer {
+  composes: btn from "../../../../Sass/common/_buttons.scss";
+  composes: btn-grey from "../../../../Sass/common/_buttons.scss";
+
+  color: $text-light;
+
+  &.is-active {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+.btn--profile {
+  padding: 0;
+  position: relative;
+  display: block;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &:hover,
+  &:focus {
+    border: $border-style;
+  }
+  svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    fill: #ffffff;
+    z-index: 1;
+    width: 22px;
+    border-radius: $radius-small;
+    height: 22px;
+  }
+  &.is-active {
+    border: 2px solid $turquoise-blue;
+  }
+}
+.native-resolution-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.native-resolution-header {
+  cursor: pointer;
+}
+.btn--nativeResolution {
+  composes: btn from "../../../../Sass/common/_buttons.scss";
+  padding-right: 5px;
+}
+
+.quality-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// .quality-heading {
+
+// }
+.quality-label {
+  display: inline-block;
+}
+.opacity-slider {
+  margin-left: 10px;
+}
+
+.user-details {
+  display: flex;
+  float: left;
+  flex-direction: column;
+}
+
+.user-actions {
+  display: flex;
+  float: right;
+  flex-direction: column;
+}

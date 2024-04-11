@@ -1,0 +1,55 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "DRR": {
+        "type": ["boolean", "null"],
+        "title": "Disaster risk reduction: countries where there is an adaptation plan and/or robust disaster risk reduction measures",
+        "description": "",
+        "default": null
+      },
+      "FORECAST": {
+        "type": ["boolean", "null"],
+        "title": "Weather information: countries where there are weather forecasts available ",
+        "description": "",
+        "default": null
+      },
+      "COMM": {
+        "type": ["boolean", "null"],
+        "title": "Communication: distance to roads and markets (less than 1h)",
+        "description": "",
+        "default": null
+      },
+      "GOV": {
+        "type": ["boolean", "null"],
+        "title": "Government effectiveness: countries where government effectively supports local communities to adapt and/or mitigate climate change",
+        "description": "",
+        "default": null
+      },
+      "ECTR": {
+        "type": ["boolean", "null"],
+        "title": "Basic needs: countries where most of the population has access to electricity",
+        "description": "",
+        "default": null
+      },
+      "INFO": {
+        "type": ["boolean", "null"],
+        "title": "Access to information: countries where communities have access to information through ICTs, phones, or other means",
+        "description": "",
+        "default": null
+      },
+      "GDP": {
+        "type": ["boolean", "null"],
+        "title": "Economic: countries where the community has the economic means (>20 000 USD/year) to adapt to climate change and associated hazards",
+        "description": "",
+        "default": null
+      },
+      "CREDIT": {
+        "type": ["boolean", "null"],
+        "title": "Economic: share of total government expenditure in agriculture, forestry, and fishing ",
+        "description": "",
+        "default": null
+      }
+    }
+  }
+  

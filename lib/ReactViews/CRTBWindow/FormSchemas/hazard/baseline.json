@@ -1,0 +1,61 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "TMAX": {
+        "type": ["boolean", "null"],
+        "title": "Extreme high temperatures: areas where maximum temperatures are above 35ºC for at least 30 days on average per year",
+        "description": "",
+        "default": null
+      },
+      "FROST": {
+        "type": ["boolean", "null"],
+        "title": "Extreme Low temperatures: areas where minimum temperatures are below 0ºC for at least 15 days on average per year",
+        "description": "",
+        "default": null
+      },
+      "PMAX": {
+        "type": ["boolean", "null"],
+        "title": "Extreme precipitation: areas where maximum 1-day precipitation is above 50mm on average per year.",
+        "description": "",
+        "default": null
+      },
+      "FLOOD": {
+        "type": ["boolean", "null"],
+        "title": "Extreme precipitation:  areas prone to flood events with 100-year return period",
+        "description": "",
+        "default": null
+      },
+      "RTL": {
+        "type": ["boolean", "null"],
+        "title": "Landslide: areas where median annual rainfall-triggered landslide is above 0",
+        "description": "",
+        "default": null
+      },
+      "SPI": {
+        "type": ["boolean", "null"],
+        "title": "Drought: areas where the Standardized Precipitation Index is below 0%",
+        "description": "",
+        "default": null
+      },
+      "FIRES": {
+        "type": ["boolean", "null"],
+        "title": "Wildfires: areas where the fire frequency is above 1 on average per year",
+        "description": "",
+        "default": null
+      },
+      "SST": {
+        "type": ["boolean", "null"],
+        "title": "Ocean temperature: areas where the temperature of the sea at surface level is above 25ºC",
+        "description": "",
+        "default": null
+      },
+      "SSPH": {
+        "type": ["boolean", "null"],
+        "title": "Ocean acidification: areas where pH at surface is below 8.085",
+        "description": "",
+        "default": null
+      }
+    }
+  }
+  

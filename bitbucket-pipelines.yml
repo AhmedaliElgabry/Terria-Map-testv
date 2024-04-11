@@ -1,0 +1,131 @@
+image: atlassian/default-image:2
+
+# options:
+#   max-time: 6
+
+definitions:
+  steps:
+    - step: &build-and-test
+        name: Build and Test
+        image: node:14.20.0
+        script:
+          - echo Install chrome
+          - apt-get update && apt-get install -yq libnss3 unzip xvfb libxi6 libgconf-2-4
+          - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
+          - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+          - apt-get -y update
+          - apt-get -y install google-chrome-stable
+          - echo Building core $BITBUCKET_BRANCH
+          - npm install
+          - npm run gulp build
+          - npm run gulp test-chromeheadless
+
+    - step: &lint-code
+        name: Lint
+        image: node:14.20.0
+        script:
+          - echo Linting $BITBUCKET_BRANCH
+          - npm install
+          - npm run gulp lint
+    
+    - step: &bump-version-and-generate-changelog
+        name: Bump Package version and Generate Change-log from commit/merge history
+        image: node:14.4.0
+        script:
+          - npm install auto-changelog standard-version
+          - npm run bumpVersion
+          - npm run generate-changelog
+          - git status
+          - git add .
+          - git commit -m "docs:| bumped package version and change-log generated [skip ci]"
+          - git push https://${BB_PIPELINE_APP_USERNAME}:${BB_PIPELINE_APP_PASSWORD}@bitbucket.org/cioapps/terriajs.git --follow-tags
+          - echo "finished bumping version and generating change-log"
+        artifacts:
+          - .auto-changelog/CHANGELOG.md
+
+    - step: &publish-changelog-to-gcp-bucket
+        name: Publish Changelog to GCP Bucket
+        image: google/cloud-sdk:latest
+        script:
+          # Authenticating with the service account key file
+          - echo $PROJECT_KEYFILE > ./gcloud-api-key.json
+          - gcloud auth activate-service-account --key-file gcloud-api-key.json
+          # Linking to the Google Cloud project
+          - gcloud config set project $PROJECT_ID
+          - gsutil -m cp .auto-changelog/CHANGELOG.md gs://810c63d8-3fde-4ecd-9882-14d62e3058be/static/changelogs/changelog_core.md
+
+    - step: &create-pull-request-and-merge
+        name: create pull request (master -> dev ) and merge to dev
+        script:
+          - apt-get update
+          - apt-get -y install curl jq
+          - >
+            export pr_id=$(curl --request POST \
+              --url 'https://api.bitbucket.org/2.0/repositories/cioapps/terriajs/pullrequests' \
+              --header 'Content-Type: application/json' \
+              --header 'Accept: application/json' \
+              --header "Authorization: Bearer ${BB_AUTH_TOKEN}" \
+              --data '{
+                  "title": "docs: Automated Pull request [skip ci]",
+                  "source": {
+                    "branch": {
+                      "name": "master"
+                    },
+                    "merge_strategies": [
+                        "merge_commit"
+                    ]
+                  },
+                  "destination": {
+                    "branch": {
+                      "name": "dev"
+                    }
+                  },
+                  "close_source_branch": false
+                }' | jq '.id')
+          - echo "Done creating pull request"
+          - echo "PR URL :> https://bitbucket.org/cioapps/terriajs/pull-requests/${pr_id}"
+          - echo "Merging pull request"
+          - >
+            curl --request POST \
+              --url https://api.bitbucket.org/2.0/repositories/cioapps/terriajs/pullrequests/${pr_id}/merge \
+              --header 'Content-Type: application/json' \
+              --header 'Accept: application/json' \
+              --user ${BB_PIPELINE_APP_USERNAME}:${BB_PIPELINE_APP_PASSWORD} \
+              --data '{ 
+                      "message": "docs:| rebased dev with master. [skip ci]",
+                      "merge_strategy": "merge_commit",
+                      "close_source_branch": false
+                    }'
+
+
+pipelines:
+  branches:
+    master:
+      - step:
+          <<: *build-and-test
+      - step:
+          <<: *bump-version-and-generate-changelog
+      - step:
+          <<: *publish-changelog-to-gcp-bucket
+          deployment: fao-maps
+      - step:
+          <<: *create-pull-request-and-merge
+
+    dev:
+      - step:
+          <<: *build-and-test
+
+  pull-requests:
+    '**':
+      - step:
+          <<: *build-and-test
+
+  custom:
+    
+    custom-build:
+      - step:
+          <<: *build-and-test
+    
+    lint:
+      - step:
+          <<: *lint-code

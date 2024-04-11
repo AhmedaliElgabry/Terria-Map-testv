@@ -1,0 +1,98 @@
+@import "~terriajs-variables";
+
+.templateViewWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+
+  & h5,
+  & p {
+    margin: 2px 0;
+  }
+
+  & .template {
+    cursor: pointer;
+    width: 160px;
+
+    & .preview {
+      height: auto;
+
+      & .thumbnail {
+        box-shadow: 0px 0px 5px 0px #000;
+        width: 100%;
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & .previewText {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: relative;
+        width: 100%;
+        height: 25px;
+        top: -25px;
+        right: 0px;
+      }
+    }
+
+    & .description {
+      display: flex;
+      justify-content: start;
+
+      & .text {
+        font-size: 0.7125rem;
+        vertical-align: top;
+        margin: 0 5px;
+      }
+
+      & .icon {
+        width: 15px;
+        height: 15px;
+        padding: 2px;
+        fill: #fff;
+        // display: inline-block;
+        display: none;
+      }
+    }
+  }
+}
+
+.explorerPanelOverrides {
+  @media (max-width: $sm) {
+    height: auto;
+    max-width: unset;
+    max-height: unset;
+  }
+}
+
+.loader {
+  & svg {
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+  }
+
+  & > span {
+    padding: 15px 0 0 15px;
+  }
+}
+
+.inputsContainer {
+  height: auto !important;
+  padding: 10px 2px !important;
+}
+
+.explorerPanel {
+  max-width: 700px !important;
+}
+
+.preventClick {
+  pointer-events: none;
+  opacity: 0.3;
+  cursor: not-allowed;
+}

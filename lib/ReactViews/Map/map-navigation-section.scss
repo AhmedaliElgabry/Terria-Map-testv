@@ -1,0 +1,35 @@
+@import "~terriajs-variables";
+@import "../../Sass/common/mixins";
+
+.map-navigation-section {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 0px;
+  height: calc(100% - 65px - 100px);
+  position: absolute;
+  right: 16px;
+  top: 65px;
+  z-index: 1;
+
+  @media (max-width: $sm) {
+    top: 80px;
+    bottom: auto;
+  }
+}
+
+.map-navigation-top {
+}
+
+.map-navigation-bottom {
+  margin-top: 7px;
+
+  @media (max-width: $sm) {
+    margin-right: 8px;
+  }
+}
+
+.with-time-series-controls {
+  bottom: 58px;
+}

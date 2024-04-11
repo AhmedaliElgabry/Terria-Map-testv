@@ -1,0 +1,237 @@
+.pvtUi {
+    color: var(--fg-text-primary);
+    font-family: "Open Sans", sans-serif;
+    background: var(--bg-neutral-1);
+    border-collapse: collapse;
+    text-transform: none;
+    transition: all 0.4s;
+    min-height: 40vh;
+}
+
+
+.pvtRenderers {
+    color: var(--fg-text-primary);
+    background-color: var(--bg-neutral-1);
+    border: var(--bg-pivot-RR) 1px solid;
+    min-width: 280px;
+    transition: background-color, 0.25s;
+}
+
+.pvtOutput {
+    border: none;
+    margin: -1px;
+}
+
+.pvtAxisContainer,
+.pvtVals {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+    border: var(--bg-pivot-RR) 1px solid;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.pvtCheckContainer p.selected {
+    background: var(--bg-table-container);
+    color: var();
+    border-bottom: var(--bg-pivot-RR) 1px solid;
+}
+
+.pvtCheckContainer p:hover {
+    /* background-color: var(--bg-neutral-1);
+     */
+    font-weight: bolder;
+}
+
+.pvtCheckContainer p {
+    transition: background-color 0.5s, font-weight 0.5s;
+}
+
+table.pvtTable thead {
+    position: sticky;
+    top: 0px;
+    z-index: 30;
+    box-shadow: var(--view-shadow);
+    background: var(--bg-neutral-1);
+}
+
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
+    background: var(--bg-neutral-1);
+    color: var(--fg-text-primary);
+    border: 1px solid var(--border-pivot);
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    transition: filter 0.5s;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.pvtTable tbody tr:nth-child(odd){
+    background-color: #4C8BF5 !important;
+}
+
+
+table.pvtTable thead tr th:hover,
+table.pvtTable tbody tr th:hover {
+    /*This is disabled because it interfers with the tooltip*/
+    /* filter: brightness(95%); */
+}
+
+table.pvtTable tbody tr td {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+    padding: 5px;
+    border: 1px solid var(--border-pivot);
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    transition: filter 0.5s;
+    white-space: nowrap;
+}
+
+table.pvtTable tbody tr td:hover {
+}
+
+.pvtColOrder,
+.pvtRowOrder {
+    color: var(--fg-text-primary);
+}
+
+.pvtDropdownActiveValue {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+    border: solid 1px var(--bg-pivot-RR);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.pvtButton {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color: var(--bg-pivot-RR);
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.pvtButton:hover {
+    color: var(--fg-text-primary);
+    background: #c2c2c2;
+    border-color: var(--bg-pivot-RR);
+}
+
+.pvtButton:active {
+    color: var(--fg-text-primary);
+    background: #dcdcdc;
+}
+
+.pvtRowLabel {
+    vertical-align: top;
+}
+
+.pvtDropdown {}
+
+.pvtDropdownCurrent {
+    border: 1px solid var(--bg-pivot-RR);
+    border-radius: 2px;
+    background: var(--bg-neutral-1);
+    padding: 5px;
+    font-size: 15px;
+}
+
+.pvtDropdownMenu {
+    min-width: 100%;
+    width: auto;
+}
+
+.pvtDropdownValue {
+    font-size: 15px;
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+}
+
+.pvtFilterBox {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+    padding: 5px;
+}
+
+.pvtFilterBox input[type='text'] {
+    font-size: 16px;
+    height: 30px;
+}
+
+/* For the TSV display */
+td.pvtOutput>textarea {
+    color: var(--fg-text-primary);
+    background: var(--bg-neutral-1);
+}
+
+table.pvtTable {
+    margin-top: 0;
+}
+
+.pvtRenderers::before {
+    content: "View Type: ";
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 5px 2px;
+    background: var(--bg-neutral-1);
+}
+
+.pvtCols::before {
+    content: "Pivot Axis: ";
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 5px 2px;
+    background: var(--bg-neutral-1);
+}
+
+.pvtUnused::before {
+    content: "Fields List: ";
+    display: block;
+    padding: 5px;
+    margin: -3px -4px 6px -4px;
+    background: var(--bg-neutral-1);
+}
+
+.pvtRows::before {
+    content: "Data Fields: ";
+    display: block;
+    padding: 5px;
+    margin: -3px -4px 6px -4px;
+    background: var(--bg-neutral-1);
+}
+
+.pvtTotal,
+.pvtTotalLabel,
+.pvtGrandTotal {
+    display: none;
+}
+
+.pvtVal {}
+
+.slide-left {
+    position: relative;
+    animation: slide-left-frames 0.5s forwards;
+}
+
+@keyframes slide-left-frames {
+    0% {
+        left: 0;
+        opacity: 100%;
+    }
+
+    100% {
+        left: -600px;
+
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "INFO_USER_INPUT": {
+        "type": ["boolean", "null"],
+        "title": "Climate information: countries where there are climate information systems relevant for the agriculture sector",
+        "description": ""
+      }
+    }
+  }
+  

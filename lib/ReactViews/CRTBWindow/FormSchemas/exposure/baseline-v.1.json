@@ -1,0 +1,49 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "CROP": {
+        "type": ["boolean", "null"],
+        "title": "Crop productivity (ASIS):",
+        "description": "",
+        "default": null
+      },
+      "LIVESTOCK": {
+        "type": ["boolean", "null"],
+        "title": "Livestock productivity (ASIS):",
+        "description": "",
+        "default": null
+      },
+      "FISH": {
+        "type": ["boolean", "null"],
+        "title": "Fisheries distribution:",
+        "description": "",
+        "default": null
+      },
+      "FOREST": {
+        "type": ["boolean", "null"],
+        "title": "Forestry distribution:",
+        "description": "",
+        "default": null
+      },
+      "MANGROVE": {
+        "type": ["boolean", "null"],
+        "title": "Mangroves:",
+        "description": "",
+        "default": null
+      },
+      "PROTECTEDAREAS": {
+        "type": ["boolean", "null"],
+        "title": "Protected areas:",
+        "description": "",
+        "default": null
+      },
+      "INFRASTRUCTURE": {
+        "type": ["boolean", "null"],
+        "title": "Infrastructure (shelter, manufacturing, value chains etc.):",
+        "description": "",
+        "default": null
+      }
+    }
+  }
+  

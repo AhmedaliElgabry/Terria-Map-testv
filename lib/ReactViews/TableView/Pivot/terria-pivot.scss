@@ -1,0 +1,196 @@
+@import "~terriajs-variables";
+
+.terria-pivot-wrapper {
+  composes: scrollbars from "../../../Sass/common/_base.scss";
+  height: calc(100vh - 70px);
+  box-sizing: border-box;
+  border-left: solid 1px whitesmoke;
+  border-right: solid 1px whitesmoke;
+
+  overflow-y: hidden;
+  h2 {
+    color: var(--fg-pivot-RR);
+    margin: 0 10px;
+    font-size: 1em;
+
+    svg {
+      height: 15px;
+      width: 15px;
+      fill: var(--fg-pivot-RR);
+      stroke: var(--fg-pivot-RR);
+    }
+
+    button {
+      margin-left: 5px;
+      vertical-align: middle;
+      border: none;
+    }
+  }
+
+  .top-bar {
+    min-height: 45px;
+    // width: calc(100% - 20px);
+    margin-left: 3px;
+    width: calc(100% - 3px);
+    border: solid 1px var(--border-pivot);
+    background-color: var(--bg-neutral-1);
+    box-shadow: var(--view-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 9998;
+    color: var(--fg-text-primary);
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+
+    h2 {
+      cursor: pointer;
+      font-weight: 500;
+      display: inline;
+    }
+
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      font-size: 12px;
+    }
+
+    .change {
+      background-color: var(--bg-neutral-1);
+      color: var(--fg-text-primary);
+      border-radius: 4px;
+      border: solid 1px var(--fg-pivot-RR);
+    }
+  }
+
+  .pivot {
+    transition: all 0.6s;
+    height: calc(100% - 45px - 30px); // top bar: 45px; bottom bar: 30px
+    overflow-y: auto;
+  }
+
+  .bottom-bar {
+    height: 30px;
+    border: solid 1px lightgray;
+    background-color: var(--bg-neutral-1);
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+    font-size: small;
+    margin: 0 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pre {
+      margin: 0;
+    }
+
+    span.label {
+      color: var(--fg-text-primary);
+    }
+    span.primary {
+      color: var(--fg-text-primary);
+      font-weight: 400;
+    }
+  }
+
+  .edit-mode {
+    table {
+      margin-left: 3px;
+    }
+  }
+
+  .read-only-mode {
+    .pvtTotal,
+    .pvtTotalLabel,
+    .pvtGrandTotal {
+      display: none;
+    }
+
+    table {
+      width: calc(100% - 3px) !important;
+    }
+
+    @media (max-width: $sm) {
+      table {
+        width: auto !important;
+      }
+    }
+  }
+
+  .pvtTotal,
+  .pvtTotalLabel,
+  .pvtGrandTotal {
+    display: none;
+  }
+
+  .icon--download {
+    // the default icon styling for a dropdown is for a btn--primary, so we have to make some adjustments
+    padding-right: 10px;
+
+    svg {
+      position: absolute;
+      top: 6px;
+      right: 5px;
+      height: 15px;
+      width: 15px;
+      fill: currentColor;
+    }
+  }
+
+  .is-processing {
+    table {
+      // filter: blur(10px);
+      opacity: 0;
+    }
+  }
+
+  .processing-message {
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    height: calc(100vh - 155px);
+    color: var(--fg-pivot-RR);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      fill: var(--fg-pivot-RR);
+      z-index: 9999;
+    }
+  }
+
+  .cell-emphasis {
+    font-weight: bolder !important;
+    background-color: var(--bg-pivot-emphasis) !important;
+    color: var(--fg-pivot-emphasis) !important;
+    border: solid 1px var(--border-emphasis) !important;
+    // animation: emp .5s .5s forwards;
+  }
+
+  .cell {
+    transition: background-color 0.3s !important;
+
+    &:hover {
+      background-color: var(--bg-pvt-hover-row) !important;
+    }
+  }
+
+  .alt-cell {
+    transition: background-color 0.3s !important;
+    background-color: var(--bg-pvt-alt-row) !important;
+    color: var(--fg-pvt-alt-row) !important;
+
+    &:hover {
+      background-color: var(--bg-pvt-hover-row) !important;
+    }
+  }
+}
+
+@keyframes emp {
+  to {
+  }
+}

@@ -1,0 +1,33 @@
+.toggle-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapsible-content-collapsed {
+  max-height: 0;
+}
+
+.collapsible-content-expanded {
+  max-height: 500px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.arrow-collapsed {
+  transform: rotate(0);
+}
+
+.arrow-expand {
+  transform: rotate(90deg);
+}

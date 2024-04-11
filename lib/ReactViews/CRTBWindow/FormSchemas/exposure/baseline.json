@@ -1,0 +1,61 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "CROPS": {
+        "type": ["boolean", "null"],
+        "title": "Crop cover: areas where crop cover is above 30%",
+        "description": "",
+        "default": null
+      },
+      "GRASSL": {
+        "type": ["boolean", "null"],
+        "title": "Grass cover: areas where grass cover is above 30%",
+        "description": "",
+        "default": null
+      },
+      "SHRUB": {
+        "type": ["boolean", "null"],
+        "title": "Shrub cover: areas where shrub cover is above 30% ",
+        "description": "",
+        "default": null
+      },
+      "FISHR": {
+        "type": ["boolean", "null"],
+        "title": "Fisheries: areas where total fish biomass is above the 50th percentile",
+        "description": "",
+        "default": null
+      },
+      "TREES": {
+        "type": ["boolean", "null"],
+        "title": "Forest-cover: areas where forest cover is above 30%",
+        "description": "",
+        "default": null
+      },
+      "MNGROVS": {
+        "type": ["boolean", "null"],
+        "title": "Biodiversity: areas where there is a presence of mangroves",
+        "description": "",
+        "default": null
+      },
+      "LOWAREAS": {
+        "type": ["boolean", "null"],
+        "title": "Physical: areas located between 10 meters below and above sea level ",
+        "description": "",
+        "default": null
+      },
+      "BIO": {
+        "type": ["boolean", "null"],
+        "title": "Biodiversity: terrestrial and marine protected areas",
+        "description": "",
+        "default": null
+      },
+      "POP": {
+        "type": ["boolean", "null"],
+        "title": "Human: areas where population growth (>100hab/km2) is exacerbating climate change impacts",
+        "description": "",
+        "default": null
+      }
+    }
+  }
+  

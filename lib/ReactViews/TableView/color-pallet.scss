@@ -1,0 +1,95 @@
+.light {
+  --background-color: whitesmoke;
+  --bg-expand-collapse-btn: #346aa6;
+  --bg-top-bar-gradient1: rgb(250, 250, 250);
+  --bg-neutral-1: #fff;
+  --bg-grid-row-hover-color: rgb(217, 217, 217);
+  --bg-table-container: #233a5f;
+  --bg-pivot-RR: #818181;
+  --bg-pivot-emphasis: #4672b8dc;
+
+  --fg-pivot-RR: #233a5f;
+  --fill: #9ca1aa;
+  --stroke: #9ca1aa;
+  --fill-1: #fff;
+  --fill-2: #eeeeee;
+  --fill-3: #233a5f;
+  --fg-expand-collapse: #fff;
+  --fg-text-primary: #3f4854;
+  --fg-header-color-RR: #233a5f;
+  --fg-pivot-emphasis: #fff;
+  --border-emphasis: #fff;
+
+  --border-pivot: #ccc;
+  --border-grid: #ddd;
+  --rdg-background-color: #fff;
+
+  --bg-pvt-row: white;
+  --bg-pvt-alt-row: whitesmoke;
+  --bg-pvt-hover-row: #eee;
+  --fg-pvt-alt-row: #444;
+}
+
+.blue {
+  --background-color: whitesmoke;
+  --bg-expand-collapse-btn: #3f4854;
+  --bg-top-bar-gradient1: #fff;
+  --bg-neutral-1: #fff;
+  --bg-grid-row-hover-color: rgb(217, 217, 217);
+  --bg-table-container: #233a5f;
+  --bg-pivot-RR: #346aa6;
+  --bg-pivot-emphasis: #4671b8;
+
+  --fg-pivot-RR: #233a5f;
+  --fill: #9ca1aa;
+  --stroke: #9ca1aa;
+  --fill-1: #fff;
+  --fill-2: #eeeeee;
+  --fill-3: #233a5f;
+  --fg-expand-collapse: #fff;
+  --fg-text-primary: #346aa6;
+  --fg-pivot-emphasis: #fff;
+  --border-emphasis: #fff;
+  --fg-header-color-RR: #233a5f;
+
+  --border-pivot: #888;
+  --border-grid: #ddd;
+  --rdg-background-color: #fff;
+
+  --bg-pvt-row: #ffffff;
+  --bg-pvt-alt-row: #e7f2fc;
+  --bg-pvt-hover-row: #c3d1e2;
+  --fg-pvt-alt-row: #inherit;
+}
+
+.dark {
+  --background-color: #3f4854;
+  --bg-expand-collapse-btn: whitesmoke;
+  --bg-top-bar-gradient1: #4a5562;
+  --bg-neutral-1: #596676;
+  --bg-grid-row-hover-color: #4a5562;
+  --bg-table-container: #346aa6;
+  --bg-pivot-RR: whitesmoke;
+  --bg-pivot-emphasis: #4671b8;
+
+  --fg-pivot-RR: #fff;
+  --fill: #9ca1aa;
+  --stroke: #9ca1aa;
+  --fill-1: rgb(42, 42, 42);
+  --fill-2: #fff;
+  --fill-3: #fff;
+  --fg-expand-collapse: #3f4854;
+  --fg-text-primary: #fff;
+  --fg-pivot-emphasis: #fff;
+  --fg-header-color-RR: #fff;
+  --border-emphasis: #333;
+
+  --border-pivot: #333;
+  --border-grid: rgb(75, 75, 75);
+  --rdg-background-color: #617082;
+
+  --bg-pvt-row: #596676;
+  --bg-pvt-alt-row: #4f5c69;
+  --bg-pvt-hover-row: #637182;
+  --fg-pvt-alt-row: #inherit;
+}

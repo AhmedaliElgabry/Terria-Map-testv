@@ -1,0 +1,62 @@
+@import "~terriajs-variables";
+
+.dimension-selector {
+  font-size: $font-size-mid-small;
+  label {
+    margin-right: $padding-small;
+  }
+
+  .date-picker-container {
+    .react-datepicker-wrapper {
+      width: 100% !important;
+    }
+
+    input::after {
+      content: "C";
+    }
+
+    input:disabled {
+      background-color: #eee;
+      opacity: 0.8;
+    }
+  }
+
+  .react-datepicker__month-read-view {
+    color: white;
+  }
+}
+
+.title {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field {
+  composes: field from "../../../Sass/common/_form.scss";
+  color: black;
+
+  input {
+    width: 100%;
+    color: black;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  color: black;
+
+  input {
+    width: 100%;
+    color: black;
+  }
+}
+
+.filter-date-picker {
+  composes: field from "../../../Sass/common/_form.scss";
+}
+
+.tree-dropdown {
+  color: black;
+}

@@ -1,0 +1,128 @@
+@import "~terriajs-variables";
+
+.range-selector-wrapper {
+  position: relative;
+  background-color: var(--bg-grid-row-hover-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px rgb(152, 152, 152);
+  border-radius: 4px;
+  padding: 0 6px;
+  transition: all 0.5s;
+  z-index: 9999999;
+  margin-top: 2px;
+  animation: drop-down 0.2s forwards;
+}
+
+@keyframes drop-down {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.open-button {
+  color: gray;
+  text-align: left;
+  border: solid lightgray 1px;
+  background: #fff;
+  height: 28px;
+  border-radius: 4px;
+  line-height: 15px;
+  width: 100%;
+  text-transform: capitalize;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.close-button {
+  height: 20px;
+  width: 20px;
+  line-height: 7px;
+  padding: 3px;
+  border-radius: 50%;
+  color: rgb(128, 128, 128);
+  border: solid 1px rgb(128, 128, 128);
+}
+
+.clear-button {
+  line-height: 12px;
+  padding: 3px;
+  border-radius: 5px;
+  border: solid 1px rgb(128, 128, 128);
+  color: rgb(128, 128, 128);
+  flex-grow: 1;
+  margin-right: 4px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+
+  span {
+    font-size: 14px;
+    flex-grow: 10;
+  }
+
+  pre {
+    display: inline;
+    color: $color-primary;
+  }
+}
+
+.container {
+  padding: 4px;
+  display: flex;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 8px;
+  label {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+
+  div {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+.open-button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.right-dock {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  border-right: none;
+}
+
+.left-dock {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+
+.important {
+  color: indianred;
+  border-color: indianred;
+  min-width: 30px;
+}

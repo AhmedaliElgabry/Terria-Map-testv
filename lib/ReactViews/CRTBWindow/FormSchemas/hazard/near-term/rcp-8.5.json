@@ -1,0 +1,43 @@
+{
+    "title": "",
+    "type": "object",
+    "properties": {
+      "TMAX": {
+        "type": ["boolean", "null"],
+        "title": "Extreme high temperatures: areas where the number of days per year with maximum temperatures above 35ºC will increase by more than 15 days",
+        "description": "",
+        "default": null
+      },
+      "FROST": {
+        "type": ["boolean", "null"],
+        "title": "Extreme Low temperatures: areas where the number of days per year with minimum temperatures below 0ºC will increase by more than 1 day",
+        "description": "",
+        "default": null
+      },
+      "PMAX": {
+        "type": ["boolean", "null"],
+        "title": "Extreme precipitation: areas where the change in the average maximum 1-day precipitation is above 20%",
+        "description": "",
+        "default": null
+      },
+      "SPI": {
+        "type": ["boolean", "null"],
+        "title": "Drought: areas where the change in the Standardized Precipitation Index (SPI) is below -20%",
+        "description": "",
+        "default": null
+      },
+      "SST": {
+        "type": ["boolean", "null"],
+        "title": "Ocean temperature: areas where the change in temperature of the sea at surface level is above 1ºC",
+        "description": "",
+        "default": null
+      },
+      "SSPH": {
+        "type": ["boolean", "null"],
+        "title": "Ocean acidification: areas where the pH change is below -0.1",
+        "description": "",
+        "default": null
+      }
+    }
+  }
+  

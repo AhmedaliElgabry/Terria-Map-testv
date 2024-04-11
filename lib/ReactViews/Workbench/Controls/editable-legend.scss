@@ -1,0 +1,100 @@
+@import "~terriajs-variables";
+
+.editableLegend {
+  background: $overlay;
+  color: $text-light;
+  font-family: $font-pop;
+  padding: $padding-small;
+  margin-top: $padding;
+}
+
+.editableHeader {
+    width: 100%;
+    position: relative;
+}
+
+.editableTitle {
+    float: left;
+    font-size: $font-size-mid-small;
+    font-weight: $font-weight-bold;
+}
+
+.editableBtn {
+    float: right;
+    padding: $padding-mini $padding-small;
+    font-size: $font-size-mini;
+}
+
+.legendStyling {
+  composes: clearfix from "../../../Sass/common/_base.scss";
+  font-size: $font-size-mid-small;
+}
+
+.colorBins {
+    float: left;
+    width: 24%;
+}
+
+.colorBinsLabel {
+  font-size: $font-size-mini;
+}
+
+.colorBinsField {
+    composes: field from "../../../Sass/common/_form.scss";
+    width: 100%;
+}
+
+.paletteDetails {
+  background: $overlay;
+  color: $text-light;
+  font-family: $font-pop;
+  font-size: $font-size-mid-mini;
+  padding: $padding;
+  margin: $padding-small;
+  list-style: none;
+
+  li {
+      padding: $padding-mini;
+  }
+}
+
+.colorMethod {
+    float: right;
+    width: 72%;
+    margin-bottom: $padding;
+}
+
+.colorMethodLabel {
+  font-size: $font-size-mini;
+}
+.colorMethodField {
+    width: 100%;
+} 
+
+.colorMapOrPalette {
+    margin-bottom: $padding;
+    composes: clearfix from "../../../Sass/common/_base.scss";
+}
+
+.colorPalette {
+    padding: $padding-mini $padding-small;
+    background-color: $color-primary;
+    border-radius: $radius-small;
+    text-decoration: $link-text-decoration;
+    cursor: pointer;
+}
+
+.colorMapOrPaletteLabel {
+    font-size: $font-size-mini;
+    width: "100%";
+}
+.colorMapOrPaletteField {
+    margin-top: $padding-small;
+  composes: field from "../../../Sass/common/_form.scss";
+}
+
+.btn {
+  composes: btn from "../../../Sass/common/_buttons.scss";
+  composes: btn-primary from "../../../Sass/common/_buttons.scss";
+  margin-top: $padding;
+}

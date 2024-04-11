@@ -1,0 +1,1303 @@
+{
+  "general": {
+    "close": "关闭",
+    "open": "打开",
+    "prev": "上一页",
+    "next": "下一页",
+    "skip": "跳过",
+    "delete": "删除",
+    "cancel": "取消"
+  },
+  "measure": {
+    "measureTool": "测量工具",
+    "measureDistance": "测量不同位置之间的距离"
+  },
+  "location": {
+    "errorGettingLocation": "获取位置错误",
+    "browserCannotProvide": "您的浏览器无法获取位置信息。",
+    "myLocation": "我的位置",
+    "location": "位置",
+    "originError": "您的浏览器仅在使用https协议时才能获取位置信息。您可以使用{{secureUrl}}代替。",
+    "centreMap": "以您当前位置为中心显示地图"
+  },
+  "splitterTool": {
+    "toggleSplitterTool": "并排比较两组数据",
+    "title": "向左或向右拖动以调整视图",
+    "workbench": {
+      "goleftTitle": "仅左侧显示",
+      "goleft": "左侧",
+      "bothTitle": "两侧均显示",
+      "both": "两侧",
+      "gorightTitle": "仅右侧显示",
+      "goright": "右测",
+      "copyName": "{{name}} (copy)"
+    }
+  },
+  "zoomCotrol": {
+    "zoomIn": "放大",
+    "zoomReset": "重置缩放比例",
+    "zoomOut": "缩小"
+  },
+  "compass": {
+    "description": "拖动外圈圆环：旋转视图\n拖动内圈陀螺仪：自由转动轴向\n双击：重置视图\n提示：您也可以按住CTRL键同时拖动地图以自由转动轴向",
+    "title": "点击并拖动以旋转相机视图"
+  },
+  "AR": {
+    "title": "测试功能：增强现实（AR）",
+    "experimentalFeatureMessage": "增强现实模式目前处于测试阶段。此模式仅限用于新一代高端移动设备。<br /><br />注意：这一模式下可能产生大量数据流量，请留意您的网络供应商或许会收取相关流量费用。<br /><br />此模式下的准确性取决于您移动设备中内置指南功能的精确度。",
+    "confirmText": "知道了",
+    "manualAlignmentTitle": "手动配准",
+    "manualAlignmentMessage": "用您的移动设备对地图进行当前位置配准完毕后，点击闪烁的指南按钮。如果地图上暂无易于辨识的地标，您可以拖动和捏放地图，直至发现地标，以便将您的设备与地图进行配准。<br /><div>{{img}}</div> <br />提示：如果您不熟悉自己所处的位置，不妨将太阳或月亮作为参考地标（注意不要直视太阳，以免损伤眼睛）。",
+    "resetAlignmentTitle": "重置校准",
+    "resetAlignmentMessage": "重置指南校准。如果校准结果不符合实际情况，您可按“8”字形挥动设备，进行重新校准。您可随时进行这一操作。<br /> <br />请勿在靠近磁场或金属物体的位置进行此操作，以免干扰设备的指南功能。",
+    "arTool": "增强现实工具",
+    "btnHover": "切换悬停高度",
+    "btnRealign": "切换手动配准",
+    "btnResetRealign": "重置指南校准"
+  },
+  "legend": {
+    "lat": "纬度",
+    "lon": "经度",
+    "zone": "区域",
+    "e": "东经",
+    "n": "北纬",
+    "elev": "海拔"
+  },
+  "share": {
+    "browserPrint": "为获得更好的打印效果，请启用{{appName}}的“打印”按钮，不建议使用网络浏览器的打印功能。",
+    "shortLinkShortening": "正在创建短链接",
+    "shortLinkError": "尝试创建短链接时发生错误，  请检查您的网络连接状态后重试。",
+    "localDataNote": "<0><0>注意：</0></0><1>以下数据源中包括本地系统数据，不可分享。如需分享数据源，请将数据发布至网络服务器，并<2>创建链接</2>。</1>",
+    "generatingUrl": "正在生成分享链接",
+    "printTitle": "打印地图",
+    "printExplanation": "生成地图的打印版本。",
+    "printButton": "打印",
+    "printViewButton": "显示打印预览图",
+    "customPrint": "自定义打印",
+    "customPrintFinePrint": "请注意，打印模板由本网站所有者提供。",
+    "creatingPrintView": "正在创建打印预览图",
+    "btnAdvanced": "高级设置",
+    "embedTitle": "复制以下代码，将地图嵌入HTML页面：",
+    "shortenUsingService": "使用网络服务器，缩短URL长度",
+    "btnCatalogShareText": "分享",
+    "btnStoryShareText": "分享",
+    "btnMapShareText": "分享/打印",
+    "btnCatalogShareTitle": "与他人分享您的目录",
+    "btnStoryShareTitle": "与他人分享您的故事",
+    "btnMapShareTitle": "与他人分享您的地图"
+  },
+  "countDatasets": {
+    "btnText": "开始",
+    "loadError": "加载失败",
+    "countingMessage": "正在统计，请耐心等待",
+    "totals": "<div>目录中包含{{items}}个项目，涉及{{groups}}个分组。</div>",
+    "subTotals": "<div> {{name}}: {{items}}项目/{{groups}}分组</div>",
+    "recount": "重新统计",
+    "title": "统计数据集",
+    "btnCount": "统计数据集"
+  },
+  "toolsPanel": {
+    "btnText": "工具",
+    "btnTitle": "高级工具箱"
+  },
+  "settingPanel": {
+    "none": "（无）",
+    "viewerModeLabels": {
+      "CesiumTerrain": "3D地形",
+      "CesiumEllipsoid": "3D平滑",
+      "Leaflet": "2D"
+    },
+    "qualityLabels": {
+      "maximumPerformance": "最优性能，画质较低",
+      "balancedPerformance": "性能与画质均衡",
+      "lowerPerformance": "最优画质，性能较低"
+    },
+    "nativeResolutionLabel": "点击此处，将地图由 {{resolution1}} 分辨率调至 {{resolution2}} 分辨率",
+    "native": "默认",
+    "screen": "屏幕",
+    "btnTitle": "切换视图",
+    "btnText": "地图",
+    "mapView": "地图视图",
+    "baseMap": "底图",
+    "imageOptimisation": "图像优化",
+    "selectProjection": "地图投影",
+    "nativeResolutionHeader": "使用设备默认分辨率",
+    "mapQuality": "栅格地图画质：",
+    "qualityLabel": "画质",
+    "performanceLabel": "性能"
+  },
+  "feedback": {
+    "feedbackPreamble": "期待您的建议！",
+    "title": "反馈",
+    "close": "关闭反馈",
+    "yourName": "姓名（选填）",
+    "email": "邮箱地址（选填）<br/><2>我们只有通过邮箱才能与您跟进联系。</2>",
+    "commentQuestion": "意见或疑问",
+    "shareWithDevelopers": "向{{appName}}开发者分享我的地图视图",
+    "captionText": "这有助于我们更直观地发现您的问题",
+    "cancel": "取消",
+    "sending": "正在发送",
+    "send": "发送",
+    "feedbackBtnText": "提交反馈",
+    "type": "反馈类型",
+    "typeText": "这有助于我们更快地解决问题"
+  },
+  "helpMenu": {
+    "btnText": "帮助",
+    "btnTitle": "寻求帮助",
+    "helpMenuHeader": "您需要什么？",
+    "helpMenuOpenWelcome": "显示欢迎信息",
+    "helpMenuSatelliteGuideTitle": "查看卫星图像指南",
+    "helpMenuMoreHelpTitle": "更多帮助",
+    "done": "完成",
+    "next": "下一页"
+  },
+  "authorization": {
+    "title": "You do not have access to all of the content in this link.",
+    "unableToProvideAccessForAuthenticatedUser": "contact the link owner to request permission.",
+    "unableToProvideAccessForNonAuthenticatedUser": "Try logging in or contact the link owner to request permission.",
+    "confirmText": "Ok"
+  },
+  "sui": {
+    "notifications": {
+      "title": "此地图中包含故事。",
+      "message": "您是否希望现在查看？",
+      "confirmText": "是",
+      "denyText": "稍后时间"
+    },
+    "showWorkbench": "显示工作台",
+    "hideWorkbench": "隐藏工作台"
+  },
+  "featureInfo": {
+    "catalogItem": {
+      "moreThanMax": "已找到超过{{maximum}}项{{catalogItemName}}要素。",
+      "featuresFound": "已找到{{featCount}}项{catalogItemName}要素。",
+      "featureInfoShown": "下方显示前{{maximum}}条结果。"
+    },
+    "download": "下载表格",
+    "pickLocation": "选取位置",
+    "clickMap": "点击地图，了解某处位置的更多信息",
+    "noDataAvailable": "此处暂无数据，请尝试其他位置。",
+    "clickToAddData": "点击'$t(addData.addDataBtnText)'将数据添加至地图上",
+    "userSelection": "用户选择",
+    "panelHeading": "特征信息",
+    "btnCloseFeature": "关闭数据面板",
+    "satelliteSuggestionBtn": "在此位置显示{{catalogItemName}}。",
+    "locationMarker": "位置标记",
+    "noInfoAvailable": "暂无信息",
+    "siteData": "场地数据",
+    "latLon": "纬度/经度 ",
+    "showRawData": "显示原始数据",
+    "showCuratedData": "显示精选数据",
+    "restoreOriginalView": "恢复原始视图",
+    "focusSelectedFeature": "聚焦选定的要素",
+    "original": "原始视图",
+    "focus": "聚焦视图",
+    "crtb": "气候风险工具箱",
+    "exportImage": "导出图像"
+  },
+  "welcomeMessage": {
+    "title": "空间数据<2>简化</2>",
+    "WelcomeMessage": "在一个位置上可获取多个数据源的空间数据。",
+    "WelcomeMessagePrimaryBtn": "探索数据",
+    "WelcomeMessageSecondaryBtn": "快速浏览",
+    "WelcomeMessageDissmissText": "不再显示"
+  },
+  "exportWindow": {
+    "exportWarning": "此操作可能需要几分钟才能完成。",
+    "selectArea": "选择区域",
+    "export": "导出",
+    "title": "裁剪栅格"
+  },
+  "story": {
+    "viewStory": "查看",
+    "view": "查看",
+    "editStory": "编辑",
+    "edit": "编辑",
+    "recaptureStory": "重新捕捉",
+    "recapture": "重新捕捉",
+    "deleteStory": "删除",
+    "delete": "删除",
+    "untitledScene": "无标题的场景",
+    "doesNotExist": "故事不存在",
+    "message": "<2>这是您的故事编辑器</2><1>直接从您的地图创建和分享互动性故事<1><0></0>开始</0></1></1>",
+    "removeAllStories": "移除所有内容",
+    "removeStoriesPanel": "您是否确定删除{{ count }}场景？",
+    "removeStoriesPanel_plural": "您是否确定删除{{ count }}场景？",
+    "confirmRemove": "删除",
+    "cancelRemove": "取消",
+    "preview": "预览故事",
+    "play": "播放故事",
+    "captureSceneTitle": "捕捉当前场景",
+    "captureScene": "捕捉场景",
+    "editor": {
+      "placeholder": "在此处输入标题",
+      "cancelBtn": "取消",
+      "cancelEditing": "取消",
+      "saveBtn": "保存",
+      "saveStory": "保存"
+    },
+    "locationBtn": "中心场景",
+    "exitBtn": "退出故事",
+    "previousBtn": "跳转至上一个场景",
+    "untitled": "无标题的场景",
+    "navBtn": "跳转至故事{{title}}",
+    "nextBtn": "跳转至下一个场景",
+    "navBtnMobile": "跳转至故事{{title}}",
+    "promptHtml1": "<0>您可以随时点击此处查看和创建故事。</0>",
+    "promptHtml2": "<0><0>介绍</0><1>数据故事</1><2>直接从您的地图创建和分享互动性故事</2></0>。",
+    "story": "故事",
+    "dismissText": "知道了，谢谢！",
+    "mobileViewStory": "查看故事{{storiesLength}}",
+    "storyEditor": "故事编辑器",
+    "hideStoryPanel": "隐藏故事生成器",
+    "externalStoryNotification": "此地图中包含外部人员创建的故事。",
+    "externalStoryNotificationMessage": "该免责声明意在提醒用户，故事中表达的观点、见解和意见仅属于作者，与粮农组织无关。<br/> <br/>您是否希望现在载入故事？",
+    "externalStoryNotificationNo": "稍后时间",
+    "externalStoryNotificationYes": "是",
+    "viewNow": "您是否希望现在查看？"
+  },
+  "satelliteGuidance": {
+    "menuTitle": "您可随时查看<2>帮助菜单</2>，浏览地图指南。",
+    "dismissText": "知道了，谢谢！",
+    "titleI": "卫星影像：我该怎么做？",
+    "bodyI": "快速了解如何充分利用历史卫星图像。",
+    "prevI": "不用了，谢谢。",
+    "nextI": "查看指南",
+    "titleII": "我的卫星图像在哪里？",
+    "bodyII": "您可能需要调整缩放级别，以便在地图上显示卫星图像。",
+    "titleIII": "历史图像加载中",
+    "bodyIII": "在数据工作台中，点击捕捉日期下拉箭头，选择日期以加载历史图像。",
+    "titleIV": "按位置过滤图像",
+    "bodyIV": "您所选择的时间和位置不一定有卫星图像。如果您想查看某一特定位置的图像，请点击数据工作台上的“按位置过滤”。",
+    "titleV": "我如何查看假彩色图像？",
+    "bodyV": "您可以点击数据工作台上的样式下拉箭头，从假彩色等不同样式中进行选择，并应用至卫星图像上。"
+  },
+  "addData": {
+    "addDataBtnText": "搜索数据",
+    "btnHide": "隐藏",
+    "load": "加载本地/网络数据",
+    "closeDataPanel": "关闭数据面板",
+    "done": "完成",
+    "myData": "我的数据",
+    "dataCatalogue": "数据目录",
+    "searchPlaceholderWhole": "搜索整个目录",
+    "searchPlaceholder": "搜索目录",
+    "localAdd": "添加本地文件",
+    "localFileType": "<0>第1步：</0>选择文件类型（可选）",
+    "localFile": "<0>第2步：</0>选择文件",
+    "webAdd": "添加网络数据",
+    "webFileType": "<0>第1步：</0>选择文件类型（选填）",
+    "webFile": "<0>第2步：</0>输入数据文件或网络服务链接",
+    "urlInputBtn": "添加",
+    "browse": "浏览",
+    "localTitle": "添加本地数据",
+    "webTitle": "添加网络数据",
+    "dragDrop": "拖放",
+    "infoText": "<0>将文件拖放至此处，以便在地图上查看本地数据</0><1>（此文件不会保存或上传至互联网）</1>。",
+    "back": "返回",
+    "note": "<0>注意：</0>以此种方式添加的数据不会保存且他人不可见。",
+    "uploadBtnText": "上载"
+  },
+  "search": {
+    "resultsLabel": "搜索结果",
+    "done": "完成",
+    "data": "数据",
+    "search": "在数据目录中搜索'{{searchText}}'",
+    "viewLess": "收起{{name}}搜索结果",
+    "viewMore": "展开{{name}}搜索结果",
+    "placeholder": "搜索地点",
+    "searchCatalogue": "搜索目录"
+  },
+  "mobile": {
+    "toggleNavigation": "切换导航"
+  },
+  "preview": {
+    "doesNotContainGeospatialData": "此文件不包含地理空间数据。",
+    "selectToPreview": "<0>选择数据集以查看预览</0><1>或</1><2>进入地图</2>",
+    "loading": "预览加载中",
+    "preview": "{{appName}}预览",
+    "noPreviewAvailable": "无预览",
+    "dataPreviewLoading": "数据预览加载中",
+    "dataPreview": "数据预览",
+    "dataPreviewError": "数据预览错误",
+    "removeFromMap": "从地图上移除",
+    "addToMap": "添加至地图",
+    "disclaimer": "免责声明",
+    "dataDescription": "数据描述",
+    "datasetDescription": "数据集描述",
+    "serviceDescription": "服务描述",
+    "resourceDescription": "资源描述",
+    "licence": "许可",
+    "accessConstraints": "访问限制",
+    "author": "作者",
+    "contact": "联系方式",
+    "created": "已创建",
+    "modified": "已修改",
+    "updateFrequency": "更新频率",
+    "dataCustodian": "数据保管者"
+  },
+  "description": {
+    "name": "描述",
+    "dataLocal": "此文件仅存于您的浏览器中。如需分享，请将文件上传至公共网络服务器。",
+    "dataNotLocal": "请联系数据提供者以获得更多信息，包括关于使用权限的信息。",
+    "wms": "此为<1>WMS服务</1>，可按要求生成地图影像，通过以下链接在GIS软件中使用：",
+    "wfs": "此为<1>WFS服务</1>，可按要求传输原始空间数据，通过以下链接在GIS软件中使用：",
+    "layerName": "图层名称",
+    "typeName": "类型名称",
+    "metadataUrl": "元数据链接",
+    "dataUrl": "数据链接",
+    "useLinkBelow": "使用以下链接下载数据。关于自定义URL查询参数的更多信息，请参见<0>网络要素服务（WFS）文档</0>。",
+    "downloadInFormat": "以{{format}}格式下载当前选择的数据",
+    "downloadNotSupported": "您的浏览器不支持将此数据下载为文件所需的功能。请使用Chrome、Firefox或Safari浏览器下载数据。",
+    "useTheLinkToDownload": "使用以下链接直接下载数据。",
+    "downloadData": "下载数据",
+    "dataSourceDetails": "数据源详情",
+    "dataServiceDetails": "数据服务详情",
+    "dataCustodian": "数据保管者"
+  },
+  "workbench": {
+    "colorScaleRangeTitle": "无效色阶范围",
+    "colorScaleRangeMin": "最小值必须是数字",
+    "colorScaleRangeMax": "最大值必须是数字",
+    "colorScaleRangeMinSmallerThanMax": "色标范围最小值必须小于最大值。",
+    "colorScaleRange": "色阶范围",
+    "rangeMax": "最大值：",
+    "rangeMin": "最小值：",
+    "colorScaleUpdateRange": "更新范围",
+    "displayPercent": "显示为区域总数的百分比",
+    "opacity": "不透明度： {{opacity}} %",
+    "zoomToTitle": "缩放至图层范围",
+    "saveArea": "保存",
+    "zoomTo": "缩放至图层范围",
+    "openFeatureTitle": "缩放至数据所在区域",
+    "openFeature": "缩放至",
+    "previewItemTitle": "显示更多信息",
+    "previewItem": "关于此数据",
+    "splitItemTitle": "复制并显示分割画面",
+    "splitItem": "分割",
+    "exportDataTitle": "导出地图数据",
+    "exportData": "导出",
+    "analyzeDataTitle": "分析地图数据",
+    "analyzeData": "分析",
+    "removeFromMapTitle": "移除此数据",
+    "removeFromMap": "移除",
+    "datsetLabel": "数据集",
+    "chartsLabel": "图表",
+    "tableLabel": "表格",
+    "removeAll": "移除所有内容",
+    "toggleVisibility": "显示/隐藏数据",
+    "invertGeojson": "聚焦视图",
+    "revertGeojson": "原始视图",
+    "invertGeojsonTitle": "聚焦多边形",
+    "revertGeojsonTitle": "显示原始多边形",
+    "openTableView": "表格",
+    "openTableViewTitle": "打开表格视图"
+  },
+  "dateTime": {
+    "previous": "上一个时间",
+    "selectTime": "选择时间",
+    "outOfRange": "超出范围",
+    "timeDisabled": "时间已禁用",
+    "next": "下一个时间",
+    "useTimeline": "使用时间轴",
+    "disableClock": "禁用时间",
+    "enableClock": "启用时间",
+    "timeline": {
+      "textCell": "显示时间范围的数据集名称",
+      "gotoStart": "跳转至开头",
+      "togglePlay": "播放",
+      "playSlower": "慢速播放",
+      "playFaster": "加速播放"
+    }
+  },
+  "satellite": {
+    "pickPoint": "点击地图，选择一个点。",
+    "querying": "正在查询位置",
+    "filterByLocation": "按位置过滤",
+    "infoGroup": "仅显示可用的捕获时间：",
+    "removeFilter": "移除过滤器",
+    "zoomTo": "缩放至",
+    "newLocation": "新位置"
+  },
+  "timer": {
+    "nextScheduledUpdateTime": "下次数据更新时间为{{scheduledUpdateTime}}。",
+    "nextScheduledUpdateCountdown": "距离下次数据更新{{scheduledUpdateTime}}。"
+  },
+  "concept": {
+    "active": {
+      "edit": "编辑条件",
+      "remove": "删除条件"
+    },
+    "inactive": {
+      "cancel": "取消",
+      "newText": "新条件"
+    },
+    "summary": {
+      "addMoreText": "增加条件",
+      "addFirstText": "添加新条件"
+    }
+  },
+  "clipboard": {
+    "success": "复制至剪贴板",
+    "unsuccessful": "复制不成功",
+    "shareURL": "分享链接",
+    "shareExplanation": "任何人均可通过该链接访问此地图。",
+    "copy": "复制"
+  },
+  "dragDrop": {
+    "text": "将您的数据<0>拖放</0><1>至任意位置，以便在地图上查看<1>。",
+    "not": "<0>bbbb</0>"
+  },
+  "loader": {
+    "loadingMessage": "上载中"
+  },
+  "emptyWorkbenchMessage": "<0><0>您的工作台无内容</0><1><strong>点击上方的 '$t(addData.addDataBtnText)'，</strong></1><2><0>浏览数据目录。</0><1>将您的数据上传至</1></2><3><0></0><strong>MapTip。</strong><2>您所有的有效数据集均列于此处。</2></3></0>",
+  "dataCatalog": {
+    "groupRemove": "移除此群组",
+    "groupEmpty": "此群组无内容"
+  },
+  "catalogItem": {
+    "loading": "加载中",
+    "remove": "移除",
+    "add": "添加",
+    "trash": "从目录中移除",
+    "removeFromMap": "从地图上移除"
+  },
+  "chart": {
+    "sectionLabel": "图表",
+    "closePanel": "关闭面板",
+    "svgExport": "导出Svg",
+    "expand": "展开",
+    "download": "下载"
+  },
+  "viewModels": {
+    "searchNoLocations": "抱歉，未找到符合您搜索条件的位置。",
+    "searchErrorOccurred": "搜索时出现错误。  请检查您的网络连接状态，或稍后重试。",
+    "searchAddresses": "地址",
+    "searchPlaceNames": "官方地点名称",
+    "searchNoPlaceNames": "抱歉，未找到符合您搜索条件的官方地点名称。",
+    "searchLocations": "位置",
+    "searchCatalogueItem": "目录项目",
+    "searchNoCatalogueItem": "抱歉，未找到符合您搜索条件的目录项目。",
+    "inMultipleLocations": "在多处位置，包括： ",
+    "inDataCatalogue": "在数据目录中"
+  },
+  "terriaViewer": {
+    "slowWebGLAvailableTitle": "WebGL效果欠佳",
+    "slowWebGLAvailableMessage": "您的网络浏览器报告称以3D形式显示{{appName}}时存在性能不足问题，仅支持有限的2D体验。为获得完整的3D体验，请尝试更换网络浏览器，或者升级您的视频驱动或操作系统。",
+    "slowWebGLAvailableMessageII": "{{appName}}在支持{{webGL}}的网络浏览器中效果最佳，包括最新版本的{{chrome}}、{{firefox}}、{{safari}}和{internetExpert}和{{internetExplorer}}。您的网络浏览器似乎不支持WebGL，仅提供有限的2D体验。",
+    "internetExplorer": "Internet Explorer 11",
+    "chrome": "谷歌Chrome浏览器",
+    "firefox": "火狐Firefox浏览器",
+    "safari": "苹果Safari浏览器",
+    "webGLNotSupportedTitle": "不支持WebGL",
+    "webGLNotSupportedOrSlowTitle": "不支持WebGL或响应太慢",
+    "webGLNotSupportedOrSlowMessage": "您的网络浏览器无法显示3D地图，原因可能是浏览器不支持WebGL，或报告称WebGL响应太慢。请尝试更换网络浏览器，如最新版本的{{chrome}}、{{firefox}}、{{safari}}、{{internetExplorer}}。在某些情况下，您可能需要升级电脑的视频驱动或操作系统，以便在{{appName}}显示3D视图。"
+  },
+  "analytics": {
+    "selectLocation": "选择位置",
+    "point": "点（经/纬度）",
+    "polygon": "多边形",
+    "existingPolygon": "现有多边形",
+    "nothingSelected": "未选择任何位置，请点击上方按钮选择。",
+    "runAnalysis": "执行分析",
+    "clickToDrawLine": "点击画线",
+    "enterValidCoords": "请输入有效的坐标（举例：131.0361, -25.3450）。",
+    "selectPoint": "点击地图，选择一个点。",
+    "clickToDrawPolygon": "点击绘制多边形",
+    "shiftToDrawRectangle": "按住SHIFT键同时点击鼠标左键，绘制矩形",
+    "clickToDrawRectangle": "点击绘制多边形",
+    "selectedPolygon": "选定的多边形",
+    "regionName": "区域名称",
+    "selectExistingPolygon": "选择现有多边形",
+    "drawAnArea": "绘制区域"
+  },
+  "core": {
+    "userAddedData": "用户添加的数据",
+    "chartData": "图表数据",
+    "dataUri": {
+      "errorTitle": "浏览器不支持数据下载",
+      "errorMessage": "抱歉，微软浏览器（包括所有版本的Internet Explorer和Edge浏览器）不支持将数据下载为文件所需的数据链接功能。如需下载，请将以下链接复制至Chrome、Firefox或Safari等其他浏览器：{{href}}"
+    },
+    "findIndex": {
+      "nullUndefined": "findIndex访问目标不存在或未定义",
+      "array": "findIndex只适用于数组",
+      "function": "findIndex谓词必须是函数"
+    },
+    "dataType": {
+      "auto": "自动检测（推荐）",
+      "wms-getCapabilities": "网络地图服务（WMS）服务器",
+      "wmts-getCapabilities": "网络地图切片服务（WMTS）服务器",
+      "wfs-getCapabilities": "网络要素服务（WFS）服务器",
+      "esri-group": "Esri ArcGIS服务器",
+      "esri-mapServer": "Esri ArcGIS地图服务器（单层）",
+      "esri-featureServer": "Esri ArcGIS要素服务器（单层）",
+      "open-street-map": "开放式街道地图服务器",
+      "geojson": "GeoJSON",
+      "geoRss": "GeoRSS",
+      "kml": "KML或KMZ",
+      "csv": "CSV",
+      "czml": "CZML",
+      "gpx": "GPX",
+      "json": "JSON",
+      "other": "其他(使用转换服务)"
+    },
+    "printWindow": {
+      "errorTitle": "打印错误",
+      "errorMessage": "打印未在10秒内启动。网络浏览器可能不支持打印功能",
+      "printMediaStart": "打印启动",
+      "printMediaEnd": "打印完成",
+      "onbeforeprint": "打印前",
+      "onafterprint": "打印后"
+    },
+    "googleAnalytics": {
+      "log": "由于未指定terria.configParameters.googleAnalyticsKey，Google Analytics追踪功能被禁用。"
+    },
+    "readText": {
+      "fileRequired": "需要文件"
+    },
+    "readXml": {
+      "xmlError": "此文件不包含有效的XML内容。"
+    },
+    "serverConfig": {
+      "failedToGet": "从{{serverConfigUrl}}获取服务器配置失败。这意味着可能无法执行代理、转换和缩短链接等服务。"
+    },
+    "terriaError": {
+      "defaultValue": "发生错误"
+    }
+  },
+  "map": {
+    "addressGeocoder": {
+      "devError": "bulkConvertAddresses必须在子类级别执行。"
+    },
+    "cesium": {
+      "devError": "需要Cesium",
+      "failedToObtain": "获取图像切片失败 X坐标：{{x}} Y坐标：{{y}} 切片级别：{{level}}。",
+      "notWebMercatorTilingScheme": "此数据集不支持Web Mercator（EPSG:3857）投影，无法在2D地图上显示。",
+      "unusalTilingScheme": "此数据集的切片方案不受支持，无法在2D地图上显示。"
+    },
+    "computeRingWindingOrder": {
+      "devError": "预期点类型{x:number, y:number}"
+    },
+    "displayVariablesConcept": {
+      "defaultName": "显示变量"
+    },
+    "drawExtentHelper": {
+      "drawExtent": "绘制范围框",
+      "extent": "范围框"
+    },
+    "gmlToGeoJson": {
+      "missingPos": "GML点元素缺少pos坐标。",
+      "missingExteriorRing": "GML多边形缺少外环。",
+      "missingPosList": "GML多边形的外环缺少posList坐标列表。",
+      "containsUnsupportedFeatureType": "GML数据集中包含不支持的要素类型： {{type}}"
+    },
+    "geoRssToGeoJson": {
+      "containsUnsupportedFeatureType": "GeoRSS数据集中包含不支持的要素类型：{{type}}"
+    },
+    "w3cToGeoJson": {
+      "containsUnsupportedFeatureType": "W3C几何格式GeoRSS数据集中包含不支持的要素类型：{{type}}"
+    },
+    "gnafAddressGeocoder": {
+      "noAddresses": "此tableStructure无地址！",
+      "noAddresses2": "尽管此tableStructure报告称有地址列，但实际上并无地址。",
+      "suburb": "郊区",
+      "state": "州",
+      "postcode": "邮政编码",
+      "matchedAddresses": "匹配地址",
+      "lon": "经度",
+      "lat": "纬度",
+      "score": "分值",
+      "poBox": "邮政信箱",
+      "postOfficeBox": "邮政信箱"
+    },
+    "imageryProviderHooks": {
+      "devError": "无对图像重新着色的上下文"
+    },
+    "leafletVisualizer": {
+      "devError1": "需要leafletScene",
+      "devError2": "需要entityCollection",
+      "devError3": "需要设置时间"
+    },
+    "mapboxVectorTileImageryProvider": {
+      "requireLayerName": "MapboxVectorTileImageryProvider需要指定图层名称，作为options.layerName。",
+      "requireStyles": "MapboxVectorTileImageryProvider需要设置样式函数，作为options.styleFunc。",
+      "moreThanFourTiles": "图像提供者所提供的图像矩形和最小影像级别显示，最小级别共有{{tileCount}}块切片。不支持最小级别切片数量超过四块的图像提供者",
+      "maxLevelError": "最大级别超过数据集限度"
+    },
+    "regionProvider": {
+      "csvRegionMappingTitle": "CSV区域投影",
+      "csvRegionMappingMessageZeroFound": "未发现{{区域类型}}区域类型的区域名称。",
+      "csvRegionMappingMessageZeroBoundariesFound": "未发现{{regionName}}区域的边界",
+      "csvRegionMappingMessageLoadError": "无法加载{{regionName}}区域的边界 {{exception}}。"
+    }
+  },
+  "models": {
+    "abs": {
+      "name": "ABS.Stat",
+      "nameGroup": "ABS.Stat数据集列表",
+      "itemNotAvailableTitle": "项目不可用",
+      "itemNotAvailableMessage": "在ABS ITT服务器上调用{{methodName}}时发生错误。<p>此错误可能表明您打开的项目暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "unexpectedFormatTitle": "非预期的数据格式",
+      "unexpectedFormtMessage": "在ABS ITT服务器上调用GetGenericData时发生错误：数据格式已改变。<p>请发送电子邮件至{{email}}报告此错误。</p>",
+      "dataMergeErrorTitle": "数据无法合并",
+      "dataMergeErrorMessage": "在ABS ITT服务器上调用GetGenericData时发生错误：个别数据文件无法合并。<p>请发送电子邮件至{{email}}报告此错误。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "在ABS ITT服务器上调用GetCodeListValue时发生错误。<p>此错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "userData": {
+      "addingDataErrorTitle": "无法添加数据",
+      "addingDataErrorMessage": "指定数据无法添加，因为数据无效或者为非预期格式。",
+      "fileApiNotSupportedTitle": "不支持此文件API",
+      "fileApiNotSupportedMessage": "抱歉，您的网络浏览器不支持将您系统中的文件数据添加至{{appName}}所需的文件API。  请升级您的网络浏览器。  为获得最佳体验，建议使用{{internetExplorer}}或者最新版本的{{chrome}}或{{firefox}}。",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "谷歌Chrome浏览器",
+      "firefox": "火狐Firefox浏览器"
+    },
+    "arcGisService": {
+      "name": "ArcGIS服务群组",
+      "invalidServerTitle": "无效的ArcGIS服务器",
+      "invalidServerMessage": "调用ArcGIS REST服务时发生错误。  服务器响应结果似乎并非有效的ArcGIS REST文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "调用ArcGIS REST服务时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持{{cors}}。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向{{appName}}团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由{{appName}}代理。<p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "arcGisFeatureServer": {
+      "name": "ArcGIS要素服务器",
+      "nameGroup": "ArcGIS要素服务器群组",
+      "invalidServiceTitle": "无效的ArcGIS要素服务",
+      "invalidServiceMessage": "调用ArcGIS要素服务时发生错误。  服务器响应结果似乎并非有效的要素服务文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "调用ArcGIS要素服务时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持{{cors}}。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向{{appName}}团队发送电子邮件至{{email}要求将此服务器添加至不支持CORS的服务器列表中，由{{appName}}代理。<p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "arcGisMapServerCatalogGroup": {
+      "name": "ArcGIS地图服务器群组",
+      "invalidServiceTitle": "无效的ArcGIS地图服务",
+      "invalidServiceMessage": "调用ArcGIS地图服务时发生错误。  服务器响应结果似乎并非有效的地图服务文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "调用ArcGIS地图服务时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持{{cors}}。如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向{{appName}}团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由{{appName}}代理。<p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "cors": "CORS"
+    },
+    "arcGisMapServerCatalogItem": {
+      "name": "Esri ArcGIS地图服务器",
+      "dataDescription": "数据描述",
+      "serviceDescription": "服务描述",
+      "copyrightText": "版权文本"
+    },
+    "bing": {
+      "name": "必应地图"
+    },
+    "wcs": {
+      "asyncResultDescription": "此为使用以下输入参数在{{timestamp}}从{{name}}服务导出的数据结果。",
+      "exportFailedTitle": "导出数据失败",
+      "exportFailedMessage": "网络覆盖服务故障<br/>尝试缩小区域范围下载，或者从元数据记录中下载完整数据。",
+      "exportFailedMessageII": "网络覆盖服务故障： {{error}}"
+    },
+    "cartoMap": {
+      "name": "Carto地图",
+      "noUrlTitle": "无链接",
+      "noUrlMessage": "无法找到Carto地图图层的可用链接。"
+    },
+    "cesiumTerrain": {
+      "name": "Cesium地形",
+      "name3D": "Cesium 3D瓦片",
+      "notSupportedErrorTitle": "2D地图不支持",
+      "notSupportedErrorMessage": "“{{name}}”无法在2D视图中显示。  切换至3D视图并重试。",
+      "errorRenderingTitle": "3D渲染出错",
+      "errorRenderingMessage": "<p>3D渲染过程中发生错误。  这可能表明{{appName}}中存在漏洞，或者与您的系统或网络浏览器不兼容。  我们将为您切换至2D视图，以便您继续工作。请发送电子邮件至{{email}}报告此问题，并附上具体技术信息。  感谢反馈</>"
+    },
+    "ckan": {
+      "nameServer": "CKAN服务器",
+      "errorLoadingTitle": "加载CKAN目录时出错",
+      "errorLoadingMessage": "此CKAN目录未定义有效的过滤查询。",
+      "corsErrorMessage": "无法从CKAN服务器上获取地图包。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>如为服务器端问题，请确认已启用{{corsLink}}。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！<br/><br/>",
+      "name": "CKAN资源",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "datasetDescription": "数据集描述",
+      "dataDescription": "数据描述",
+      "resourceDescription": "资源描述",
+      "licence": "许可",
+      "author": "作者",
+      "contact_point": "联系方式",
+      "metadata_created": "已创建",
+      "metadata_modified": "已修改",
+      "update_freq": "更新频率",
+      "idsNotSpecifiedTitle": "必须指明资源或数据集的ID",
+      "idsNotSpecifiedMessage": "CkanCatalogItem要求必须指明资源或数据集的ID。",
+      "errorRetrievingUrlTitle": "获取CKAN链接时出现错误",
+      "errorRetrievingUrlMessage": "无法获取JSON格式的链接：{{url}}。",
+      "invalidCkanTitle": "无效的CKAN资源JSON文件",
+      "invalidCkanMessage": "CKAN服务器返回的资源中似乎没有package_id。",
+      "notCompatibleTitle": "未找到兼容资源",
+      "notCompatibleMessageI": "CKAN数据集没有ID为{{resourceId}}的资源，或者不支持其格式。",
+      "notCompatibleMessageII": "CKAN数据集中不含有支持格式的资源。"
+    },
+    "catalog": {
+      "name": "未命名项目",
+      "group": "分组",
+      "idForMatchingError": "目录项必须指定名称或ID，以便匹配。",
+      "catalogMemberMustHaveName": "新创建的目录项必须指定名称。",
+      "catalogMemberMustHaveType": "目录项必须指定类型。",
+      "userAddedDataGroup": "用户通过添加数据面板添加的数据群组。",
+      "chartDataGroup": "图表数据群组",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "unsupportedTypeTitle": "不支持的目录项目类型",
+      "unsupportedTypeMessage": "未知目录项目类型: {{type}}。如果您正在加载自己的目录，请确认是否正确。此错误也可能是因为试图在旧版本的{{appName}}中加载较新的目录文件。",
+      "unsupportedFileTypeTitle": "不支持的文件类型",
+      "unsupportedFileTypeMessage": "该文件格式不受{{appName}}支持。受支持的文件格式包括： <ul><li>.geojson</li><li>.kml, .kmz</li><li>.csv (in {{link}})</li></ul>",
+      "unsupportedFileTypeMessageII": "该文件格式不受{{appName}}支持。直接支持的文件格式包括：<ul><li>.geojson</li><li>.kml, .kmz</li><li>.csv (in {{link}})</li></ul> 通过在线转换服务支持的文件格式包括： <ul><li>Shapefile (.zip)</li><li>MapInfo TAB (.zip)</li><li>Possibly other {{linkII}}</li></ul>",
+      "getConfirmationMessage": "该文件格式不受{{appName}}直接支持。\n\n您是否愿意将文件上传至{{appName}}进行转换？此转换服务可能支持压缩后的小容量Esri Shapefiles或MapInfo TAB格式文件。",
+      "readyToUpload": "准备将文件上传至{{appName}}进行转换了吗？",
+      "upload": "上传",
+      "cancel": "取消",
+      "useConversion": "是否使用转换服务？",
+      "mustHaveType": "每个项目必须指定类型。",
+      "compositesError": "复合要素中不得包括复合元素。"
+    },
+    "createParameter": {
+      "unsupportedErrorTitle": "不受支持的函数参数类型",
+      "unsupportedErrorMessage": "未知函数参数类型：{{type}}。"
+    },
+    "csv": {
+      "name": "逗号分隔值（CSV）",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "unexpectedTypeTitle": "非预期类型的CSV数据",
+      "unexpectedTypeMessage": "CsvCatalogItem数据的预期格式包括Blob、File和String，但该数据不属于其中任何一种。这可能意味着terriajs库存在漏洞或API使用不当。如果您认为{{appName}}存在漏洞，请通过邮件反馈。 ",
+      "unableToLoadTitle": "无法加载CSV文件",
+      "unableToLoadMessage": "参见<a href=\"https://github.com/TerriaJS/nationalmap/wiki/csvgeoau\">csvgeoau</a>规定，了解受支持的CSV格式。\n\n {{message}}",
+      "unableToLoadItemTitle": "无法加载CSV格式目录项",
+      "unableToLoadItemMessage": "无数据或链接可加载CSV文件。",
+      "serverErrorTitle": "发生错误 ",
+      "serverErrorMessage": "<strong>无法完成分析请求</strong>。<br />请缩小关注区域，或缩短时间间隔。<br />如果问题仍无法解决，请联系<a href=\"faodata@fao.org\" target=\"_blank\">faodata@fao.org</a> "
+    },
+    "smart-csv": {
+      "name": "智能逗号分隔值（SmartCSV）",
+      "unableToLoadTitle": "加载smartcsv格式时发生错误",
+      "unableToLoadMessage": "参见<a href=\"https://github.com/TerriaJS/nationalmap/wiki/csvgeoau\">csvgeoau</a>规定，了解受支持的CSV格式。\n\n {{message}}"
+    },
+    "csw": {
+      "name": "目录服务（CSW）",
+      "unknownError": "CSW服务器报告未知错误。",
+      "exceptionMessage": "CSW服务器报告错误：\n\n {{exceptionText}}",
+      "notUseableTitle": "目录服务不可用",
+      "notUseableMessage": "在CSW服务器上调用GetDomain时收到无效响应。<p>此错误可能表明您指定的目录服务器暂时不可用或者您的网络连接存在问题。  请尝试重启处理服务器，如果问题仍无法解决，请发送电子邮件至 ",
+      "checkCORSDomain": "无法在CSW服务器上执行GetDomain。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>如为服务器端问题，请确认已启用<a href=\"http://enablecors.org/\" target=\"_blank\">CORS</a>。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！",
+      "checkCORSRecords": "无法在CSW服务器上执行GetDomain<br/><br/>如为服务器端问题，请确认已启用<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！",
+      "dataResponsibility": "数据责任",
+      "links": "链接",
+      "metadataURL": "元数据记录链接",
+      "checkCORS": "无法在CSW服务器上执行GetDomain。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>如为服务器端问题，请确认已启用{{cors}}。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}。",
+      "cors": "CORS"
+    },
+    "csw-resource": {
+      "name": "网络目录服务（CSW）资源",
+      "unknownError": "CSW服务器报告未知错误。",
+      "exceptionMessage": "CSW服务器报告错误：\n\n {{exceptionText}}",
+      "notUseableTitle": "目录服务不可用",
+      "notUseableMessage": "在CSW服务器上调用GetDomain时收到无效响应。<p>此错误可能表明您指定的目录服务器暂时不可用或者您的网络连接存在问题。  请尝试重启处理服务器，如果问题仍无法解决，请发送电子邮件至 ",
+      "checkCORSDomain": "无法在CSW服务器上执行GetDomain。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>如为服务器端问题，请确认已启用<a href=\"http://enablecors.org/\" target=\"_blank\">CORS</a>。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！",
+      "checkCORSRecords": "无法在CSW服务器上执行GetDomain<br/><br/>如为服务器端问题，请确认已启用<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！",
+      "dataResponsibility": "Data Responsibility",
+      "links": "链接",
+      "metadataURL": "元数据记录链接",
+      "checkCORS": "无法在CSW服务器上执行GetDomain。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>如为服务器端问题，请确认已启用{{cors}}。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}。",
+      "cors": "CORS"
+    },
+    "czml": {
+      "name": "Cesium语言（CZML）",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "errorLoadingTitle": "加载CZML时出错",
+      "errorLoadingMessage": "加载CZML文件时发生错误。  这可能是由于该文件无效或不受{{appName}}支持。  如您需要帮助或更多信息，请发送电子邮件至{{email}}。"
+    },
+    "function": {
+      "unknownFormaterTitle": "未知的格式化工具",
+      "unknownFormaterMessage": "未知的格式化函数参数{{formatter}}。\n\n有效的格式化工具：\n\n"
+    },
+    "geoJson": {
+      "name": "GeoJSON",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "errorLoadingTitle": "加载GeoJSON时出错",
+      "errorParsingMessage": "将所提供的数据解析为JSON格式时发生错误。  这可能是由于该文件无效或不受{{appName}}支持。如您需要帮助或更多信息，请发送电子邮件至{{email}}。",
+      "errorLoadingMessage": "加载GeoJSON文件时发生错误。  这可能是由于该文件无效或不受{{appName}}支持。如您需要帮助或更多信息，请发送电子邮件至{{email}}。",
+      "couldNotLoadTitle": "无法加载JSON",
+      "couldNotLoadMessage": "从所提供的链接中检索JSON数据时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持{{cors}}。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向“{{appName}}”团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由“appName”代理。<p>如果链接非手动输入，出现错误可能表明您添加的数据源暂时不可用，或者您的网络连接存在问题。  请尝试重新添加数据源，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "unsupportedBrowserTitle": "网络浏览器不受支持",
+      "unsupportedBrowserMessage": "抱歉，您的网络浏览器不支持{{appName}}加载此数据集所需的文件API。  请升级您的网络浏览器。  为获得最佳体验，建议使用最新版本的{{chrome}}、{{firefox}}或{{internetExplorer}}。",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "谷歌Chrome浏览器",
+      "firefox": "火狐Firefox浏览器",
+      "editor": {
+        "saveWarning": "Changes will not be saved or uploaded to the internet",
+        "applyStyle": "Apply Style",
+        "cancel": "Cancel",
+        "modified": "Modified"
+      }
+    },
+    "getToken": {
+      "errorTitle": "令牌错误",
+      "invalidToken": "<p>令牌服务器生成的令牌无效。</p><p>请发送电子邮件至{{email}}</p>反馈问题。",
+      "unableToRequest": "<p>无法请求创建令牌。</p><p>请发送电子邮件至{{email}}</p>反馈问题。"
+    },
+    "gltf": {
+      "name": "GL传输格式(glTF)",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "notSupportedErrorTitle": "2D地图不支持",
+      "notSupportedErrorMessage": "“{{name}}”无法在2D视图中显示。  切换至3D视图并重试。",
+      "error": "错误",
+      "unableToRetrieve": "无法获取要素细节：\n\n{{url}}"
+    },
+    "googleUrlShortener": {
+      "unexpectedResult": "非预期的短链接结果",
+      "urlNotLocatedTitle": "未找到缩短后的启动链接",
+      "urlNotLocatedMessage": "未找到缩短后用于启动{{appName}}的分享链接。这可能是由于链接中存在错误，或者缩短服务目前不可用。如果您认为{{appName}}存在漏洞，请发送电子邮件至{{email}}。"
+    },
+    "gpx": {
+      "name": "GPX",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "errorLoadingTitle": "加载GPX时出错",
+      "errorLoadingMessage": "加载GPX文件时发生错误。  这可能是由于该文件无效或不受{{appName}}支持。如您需要帮助或更多信息，请发送电子邮件至{{email}}。"
+    },
+    "imageryLayer": {
+      "intervalSupportErrorTitle": "不支持的区间",
+      "intervalSupportErrorMessage": "抱歉，目前无法通过指定“区间”属性，使{{typeName}} ({{type}})目录项目随时间变化。",
+      "resolvingAvailability": "正在解析某一位置的可用性",
+      "accessingBaseMapErrorTitle": "访问底图时出错",
+      "accessingBaseMapErrorMessage": "尝试下载底图切片时出现错误：<p><center>{{name}} </center></p>。这可能是因为您的网络连接存在问题，或者底图暂时不可用或无效。  请点击右上方的地图按钮，另选底图。  下方可了解更多相关技术信息。<br/><br/>",
+      "accessingCatalogItemErrorTitle": "访问目录项目时出错",
+      "accessingCatalogItemErrorMessage": "尝试下载目录项目切片时出现错误：<p><center>{{name}}</center></p>。这可能是因为您的网络连接存在问题，或者目录项目暂时不可用或无效。  目录项目隐藏于地图中  您可点击面板中的“现在查看”，重新显示该项目。  下方可了解更多相关技术信息。<br/><br/>",
+      "tileErrorTitle": "切片错误",
+      "tileErrorMessage": "以下链接\n{{url}}的切片可通过XMLHttpRequest成功加载，但Cesium或Leaflet直接加载则多次失败。\n 这可能是因为服务器对请求中的首部字段极为敏感或者不信任。",
+      "tileErrorMessageII": "链接返回状态码为200（OK）：\n{{url}}，但无法加载为图片。",
+      "unknownTileErrorTitle": "未知切片错误",
+      "unknownTileErrorMessage": "出现在访问以下链接\n{{url}}时。这可能是存在以下情况之一：\n* 服务器主机名解析不成功 * 服务器未响应请求，或 * 服务器拒绝跨源资源共享（CORS）访问此链接（https://docs.terria.io/guide/connectingtodata/crossoriginresourcesharing/）。",
+      "unableToDisplayTitle": "无法显示数据集",
+      "unableToDisplayMessage": "{{name}}不支持标准Web Mercator（EPSG:3857）的投影方式，无法在2D地图上显示。如果系统允许，请切换至3D地图，并更新数据集以支持此投影方式，或者使用其他数据集。",
+      "unableToShowLocTitle": "无法在此位置显示",
+      "unableToShowLocMessage": "{{name}}无法在此位置显示，因为捕捉时间未知。未找到{{featureTimesProperty}}属性。"
+    },
+    "invokeAnalyticsService": {
+      "invocationFailedTitle": "调用服务失败",
+      "invocationFailedMessage": "服务器在计算{{invocationName}}时发生错误。"
+    },
+    "ionImagery": {
+      "name": "Cesium Ion影像"
+    },
+    "kml": {
+      "name": "KML或KMZ",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "unexpectedTypeTitle": "非预期类型的KML数据",
+      "unexpectedTypeMessage": "KmlCatalogItem.data的预期格式包括XML文件、Blob和File，但该数据不属于其中任何一种。这可能意味着{{appName}}存在漏洞或API使用不当。如果您认为{{appName}}存在漏洞，请发送电子邮件至{{email}}。",
+      "errorLoadingTitle": "加载KML或KMZ时出错",
+      "errorLoadingMessage": "加载KMLKMZ文件时发生错误。  这可能是由于该文件无效或不受{{appName}}支持。如您需要帮助或更多信息，请发送电子邮件至{{email}}。"
+    },
+    "magda": {
+      "name": "MAGDA数据分发",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "distributionDesc": "分布描述",
+      "idsNotSpecifiedTitle": "必须指明数据分发ID或数据集ID",
+      "idsNotSpecifiedMessage": "CkanCatalogItem要求必须指明数据分发ID或数据集ID。",
+      "retrieveErrorTitle": "获取MAGDA记录时出现错误",
+      "retrieveErrorMessage": "未提供数据分发或数据集ID",
+      "notCompatibleTitle": "未发现兼容的数据分发",
+      "notCompatibleMessageI": "MAGDA数据集没有ID为{{resourceId}}的数据分发，或者不支持其格式。",
+      "notCompatibleMessageII": "MAGDA数据集没有任何受支持的数据分发格式。"
+    },
+    "mapboxMap": {
+      "name": "Mapbox地图"
+    },
+    "mapboxVectorTile": {
+      "name": "Mapbox矢量切片"
+    },
+    "mapboxStyle": {
+      "name": "Mapbox样式"
+    },
+    "ogr": {
+      "name": "未知/已转换为GeoJSON格式",
+      "dataSourceErrorMessage": "此数据源无详细信息。",
+      "serviceErrorMessage": "此项服务无详细信息。",
+      "legacyBrowserTitle": "不支持旧版的浏览器",
+      "legacyBrowserMessage": "抱歉，您的网络浏览器不支持“{{appName}}”转换服务所需的“FormData”类型。  建议升级至最新版本的{{chrome}}、{{firefox}}、{{safari}}或{{internetExplorer}}。",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "谷歌Chrome浏览器",
+      "firefox": "火狐Firefox浏览器",
+      "safari": "苹果Safari浏览器",
+      "unsupportedFileTzpe": "不支持的文件类型",
+      "loadError": "文件大小超过了{{appName}}转换服务的{{maxConversionSizeMB}}MB限制。",
+      "invalidFile": "这可能导致该文件无效或不受{{appName}}转换服务支持。",
+      "errorConvertingToGeoJsonTitle": "将文件转换为GeoJson时出错",
+      "errorConvertingToGeoJsonMessage": "尝试将文件转换为GeoJson格式时发生错误。 ",
+      "emailUs": "如您需要帮助或更多信息，请发送电子邮件至{{email}}。"
+    },
+    "openStreetMap": {
+      "name": "开放式街道地图"
+    },
+    "placesLikeMe": {
+      "regionsLikeThisName": "类似区域",
+      "regionsLikeThisDescription": "基于一组既定特征，识别出与指定区域_最相似_的其他区域。",
+      "regionTypeName": "区域类型",
+      "regionTypeDescription": "待分析区域类型",
+      "regionName": "区域",
+      "regionDescription": "待分析区域  分析将确定哪些区域与指定区域最为相似。",
+      "characteristics": "特征",
+      "characteristicsDescription": "纳入分析的区域特征。",
+      "name": "类似地点",
+      "regioNotSelectedName": "未选择区域",
+      "regioNotSelectedDescription": "您必须选定一个区域。",
+      "placesLike": "与{{regionName}}相似的地点",
+      "likenessesError": "相似性列表和地区代码列表中的元素数量不一致。"
+    },
+    "raiseError": {
+      "errorTitle": "发生错误",
+      "errorMessage": "{{appName}}出现错误。请发送电子邮件至{{email}}以反馈问题，并稍后重试。"
+    },
+    "regionMapping": {
+      "noDataForDate": "所选日期无数据",
+      "noDataForRegion": "所选区域无数据。",
+      "outdatedBrowserTitle": "网络浏览器过时",
+      "outdatedBrowserMessage": "您的网络浏览器已过时，无法显示此种“区域投影”数据集。  请尽快升级至最新版本的谷歌Chrome、火狐Firefox、Microsoft Edge、Microsoft Internet Explorer 11或苹果Safari浏览器。  如有任何疑问，请通过{{email}}联系我们。",
+      "invalidServerTypeTitle": "regionMapping.json中的无效serverType {{serverType}}。",
+      "invalidServerTypeMessage": "预计serverType为“WMS”或“vector”，但结果为“{{serverType}}”。",
+      "notRecognised": "区域名称为{{notRecognisedText}}。 ",
+      "notRecognisedText": "未识别",
+      "moreThanOneValue": "区域拥有{{moreThanOneValueText}}",
+      "moreThanOneValueText": "不止一个值",
+      "msg": "请查阅{{link}}，了解如何格式化文件。",
+      "csvSpecification": "CSVgeoau规范",
+      "issuesLoadingTitle": "加载{{名称}}出现问题"
+    },
+    "feedback": {
+      "thanksTitle": "感谢您的反馈!",
+      "thanksMessage": "您的反馈将使{{appName}}更加完善",
+      "unableToSendTitle": "无法发送反馈",
+      "unableToSendMessage": "非常抱歉，在尝试发送您的反馈时出现错误。  请改为发送电子邮件至{{email}}。"
+    },
+    "resultPending": {
+      "name": "等待结果"
+    },
+    "sensorObservationService": {
+      "procedure": "程序",
+      "property": "属性",
+      "sos": "SOS",
+      "alreadyLoadingTitle": "数据已在加载中",
+      "alreadyLoadingMessage": "您的数据仍在加载中。数据加载完毕后，您可以更改显示。",
+      "unknownError": "服务器报告未知错误",
+      "exceptionMessage": "服务器报告错误： \n\n {{exceptionText}}",
+      "missingBody": "服务器返回信息为空。",
+      "noFeatures": "未找到符合您搜索条件的要素。",
+      "unknownFormat": "服务器返回未知要素格式。",
+      "noMatchingFeatures": "传感器观测服务未找到任何与搜索条件相匹配的结果。"
+    },
+    "time": {
+      "invalidDate": "无效日期",
+      "invalidInitialTimeSource": "配置文件中指定的initialTimeSource无效：{{initialTimeSource}}"
+    },
+    "shareData": {
+      "generateErrorTitle": "无法创建短链接",
+      "generateErrorMessage": "尝试使用分享数据服务创建短链接时发生错误。如果您认为{{appName}}存在漏洞，请发送电子邮件至{{email}}。",
+      "expandErrorTitle": "无法展开链接",
+      "expandErrorMessage": "未找到用于启动{{appName}}的分享数据服务。这可能是由于链接中存在错误，或者此服务目前不可用。如果您认为{{appName}}存在漏洞，请发送电子邮件至{{email}}。"
+    },
+    "socrataServer": {
+      "name": "Socrata服务器",
+      "retrieveErrorMessage": "无法从Socrata服务器上获取地图包。<br/><br/>如您是手动输入链接地址，请检查是否有误。<br/><br/>若非上述原因，且重新加载后仍存在问题，请发送电子邮件至{{email}}，并附上具体技术信息。  感谢反馈！<br/><br/><pre> {{formatError}}</pre>",
+      "description": "描述",
+      "licence": "许可",
+      "attributes": "特性",
+      "tags": "标记"
+    },
+    "spatialDetailing": {
+      "name": "空间细化",
+      "description": "通过学习和利用粗粒度数据与普查特征的相关性，预测细粒度区域的特征。",
+      "regionTypeToPredictName": "待预测的区域类型",
+      "regionTypeToPredictDescription": "即将预测特征的区域类型",
+      "coarseDataRegionTypeName": "粗粒度数据区域类型",
+      "coarseDataRegionTypeDescription": "与粗粒度输入特征相关联的区域类型",
+      "aggregationName": "聚合",
+      "aggregationDescription": "指定粗粒度区域值的聚集方式  如果该值是整个区域的平均值，则为真；如果该值是整个区域值的总和，则为假。",
+      "aggregationTrueName": "平均值聚合",
+      "aggregationTrueDescription": "粗粒度区域值为该区域内样本的平均值。  例如，家庭平均收入。",
+      "aggregationFalseName": "总和聚合",
+      "aggregationFalseDescription": "粗粒度区域值为该区域内样本值的总和。  例如，人口总数。",
+      "characteristicToPredictName": "待预测特征",
+      "characteristicToPredictDescription": "将预测的各区域特征",
+      "spatialDetailingOf": "在{{at}}处进行{{of}}空间细化",
+      "wrongNumberOfElements": "值列表和地区代码列表中的元素数量不一致"
+    },
+    "tableData": {
+      "unsupportedCharactersTitle": "纬度和经度列中的字符无效",
+      "unsupportedCharactersMessage": "无法解释经纬度对{{longitude}}, {{latitude}}。",
+      "bulkGeocoderInfoTitle": "批量地理编码信息",
+      "bulkGeocoderInfoMessage": "CSV中包含地址，但{{number}}无法在地图上定位： ",
+      "bulkGeocoderInfo2Message": "CSV中缺少{{nullAddresses}}地址。",
+      "bulkGeocoderErrorTitle": "批量地理编码错误",
+      "bulkGeocoderErrorMessage": "无法将地址投影至经纬度坐标，因为检索地址坐标时发生错误。请检查您的网络连接状态，或稍后重试。"
+    },
+    "terrainCatalog": {
+      "notSupportedErrorTitle": "2D地图不支持",
+      "notSupportedErrorMessage": "{{name}}无法在2D视图中显示。  切换至3D视图并重试"
+    },
+    "terria": {
+      "initErrorTitle": "服务初始化失败",
+      "initErrorMessage": "Terria服务器出现问题。这可能导致某些图层或转换服务不可用。",
+      "urlLoadErrorTitle": "加载链接出现问题",
+      "urlLoadErrorMessage": "使用URL参数初始化Terria出现问题。",
+      "loadingInitSourceErrorTitle": "加载初始化数据源时出错",
+      "loadingInitSourceErrorMessage": "无法从{{fragment}}加载初始化信息，未定义initFragmentPaths。",
+      "loadingInitSourceError2Message": "从{{loadSource}}加载初始化信息时发生错误。  这可能是因为您追踪的链接无效，或者网络连接存在问题。",
+      "disclaimer": "免责声明",
+      "buttonTitleConfirm": "我同意"
+    },
+    "terriaJSONcatalog": {
+      "name": "Terria JSON目录函数",
+      "misconfiguredErrorTitle": "初始化文件配置错误",
+      "misconfiguredErrorMessage": "TerriaJsonCatalogFunction状态代码HTTP 202未配置服务。",
+      "misconfiguredError2Message": "HTTP 202的配置值{{url}}在响应中不存在{{xhr}}。",
+      "serviceResponseErrorTitle": "服务端响应结果非JSON字符串",
+      "serviceResponseErrorMessage": "TerriaJsonCatalogFunction本应接收JSON字符串，但接收到{{xhr}}。",
+      "requestFailedTitle": "请求失败",
+      "requestFailedMessage": "请求失败，状态代码为{{status}}。",
+      "asyncResultDescription": "此为使用以下输入参数在{{timestamp}}调用{{name}}流程或服务的结果。",
+      "loadingInitSourceErrorTitle": "加载初始化数据源时出错",
+      "loadingInitSourceErrorMessage": "从{{fragment}}加载初始化信息发生错误，未定义initFragmentPaths。",
+      "loadingInitSourceError2Message": "从{{loadSource}}加载初始化信息时发生错误。这可能是因为您追踪的链接无效，或者网络连接存在问题。",
+      "disclaimer": "免责声明",
+      "buttonTitleConfirm": "我同意"
+    },
+    "urlTemplateMapServer": {
+      "name": "链接模板地图服务器"
+    },
+    "userDrawing": {
+      "devError": "需要Terria实例。",
+      "messageHeader": "在地图上绘制",
+      "drawLineMessageHeader": "Draw a Line",
+      "drawRectangleMessageHeader": "Draw a Rectangle",
+      "drawCircleMessageHeader": "Draw a Circle",
+      "drawSquareMessageHeader": "Draw a Square",
+      "drawShapeMessageHeader": "Draw a Shape",
+      "drawPolygonMessageHeader": "Draw a Polygon",
+      "drawTriangleMessageHeader": "Draw a Triangle",
+      "pointEntities": "点",
+      "otherEntities": "线和多边形",
+      "line": "线",
+      "firstPoint": "第一个点",
+      "btnCancel": "取消",
+      "btnDone": "完成",
+      "clickToAddFirstPoint": "点击添加点",
+      "clickToAddAnotherPoint": "点击添加另一个点",
+      "anotherPoint": "另一个点",
+      "userPolygon": "用户自定义多边形"
+    },
+    "webFeatureServiceCatalogGroup": {
+      "wfsServer": "网络要素服务（WFS）服务器",
+      "invalidWFSServerTitle": "无效的WFS服务器",
+      "invalidWFSServerMessage": "在WFS服务器上调用GetCapabilities时发生错误。  服务器响应结果似乎并非有效的GetCapabilities文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "在WFS服务器上调用GetCapabilities时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向“{{appName}}”地图团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由“appName”代理。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "webFeatureServiceCatalogItem": {
+      "wfs": "网络要素服务（WFS）"
+    },
+    "webMapServiceCatalogGroup": {
+      "wmsServer": "网络地图服务（WMS）服务器",
+      "invalidWMSServerTitle": "无效的WMS服务器",
+      "invalidWMSServerMessage": "在WMS服务器上调用GetCapabilities时发生错误。服务器响应结果似乎并非有效的GetCapabilities文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "在WMS服务器上调用GetCapabilities时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向“{{appName}}”地图团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由“appName”代理。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "webMapServiceCatalogItem": {
+      "wms": "网络地图服务（WMS）",
+      "dataDescription": "数据描述",
+      "serviceDescription": "服务描述",
+      "metadataUrls": "元数据链接",
+      "accessConstraints": "访问限制",
+      "serviceContact": "服务联系",
+      "getCapabilitiesUrl": "GetCapabilities链接",
+      "noLayerFoundTitle": "未找到图层",
+      "noLayerFoundMessage": "WMS数据集“{{name}}”没有与“{{layers}}”匹配的图层。{{suggested}} {{line}}{{line}}目录文件设置有误，或WMS服务器有变更。{{line}}{{line}}请发送电子邮件至{{email}}报告此错误。",
+      "datasetScaleErrorTitle": "数据集无法以此比例显示",
+      "datasetScaleErrorMessage": "{{name}}数据集放大至比例时无法在地图上显示，因为数据保管者表示该数据未预期或不适合在这一比例尺下显示。  点击“现在查看”选项卡上的数据集“信息”按钮，了解有关该数据集和数据保管者的更多信息。",
+      "badlyFormatedTitle": "周期性格式错误",
+      "badlyFormatedMessage": "“{{name}}”数据集的周期性格式存在问题“{{isoSegments}}”。点击数据集“信息”按钮，了解有关该数据集和数据保管者的更多信息。",
+      "missingDataTitle": "数据缺失",
+      "missingDataMessage": "WMS数据集“{{name}}”未返回任何数据。 {{line}}{{line}}目录文件设置有误，或服务器地址变更。{{line}}{{line}}请发送电子邮件至{{email}}报告此错误。"
+    },
+    "webMapTileServiceCatalogGroup": {
+      "wmtsServer": "网络地图切片服务（WMTS）服务器",
+      "invalidWMTSServerTitle": "无效的WMTS服务器",
+      "invalidWMTSServerMessage": "在WMS服务器上调用GetCapabilities时发生错误。服务器响应结果似乎并非有效的GetCapabilities文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "在WMTS服务器上调用GetCapabilities时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。  如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向“{{appName}}”地图团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由“appName”代理。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "webMapTileServiceCatalogItem": {
+      "wmts": "网络地图切片服务（WMTS）",
+      "dataDescription": "数据描述",
+      "serviceDescription": "服务描述",
+      "accessConstraints": "访问限制"
+    },
+    "webProcessingService": {
+      "wps": "网络处理服务（WPS）",
+      "invalidWPSServerTitle": "无效的WPS服务器",
+      "invalidWPSServerMessage": "在WPS服务器上调用DescribeProcess以获取处理流程名称{{name}}时发生错误。  服务器响应结果似乎并非有效的DescribeProcess文件。<p>此错误可能表明您指定的处理服务器暂时不可用，或者您的网络连接存在问题。  请尝试重启处理服务器，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "processDescriptionErrorTitle": "此流程无描述性信息",
+      "processDescriptionErrorMessage": "此项流程的WPS DescribeProcess中不包括ProcessDescription（流程信息描述）。",
+      "processInputErrorTitle": "此流程无输入参数",
+      "processInputErrorMessage": "此项WPS流程未指定任何输入参数。",
+      "unsupportedParameterErrorTitle": "不受支持的函数参数类型",
+      "unsupportedParameterErrorMessage": "参数{{identifier}}不是受支持的参数类型。",
+      "invalidResponseErrorTitle": "WPS服务器响应无效",
+      "invalidResponseErrorMessage": "在WPS服务器上访问状态未知以获取处理任务名称{{name}}时发生错误。  服务器响应结果似乎并非有效的ExecuteResponse文件。<p>此错误可能表明您指定的处理服务器暂时不可用，或者您的网络连接存在问题。  如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "invalidResponseError2Title": "WPS服务器响应无效",
+      "invalidResponseError2Message": "WPS服务器的响应不包括状态元素。",
+      "failureReasonUnknowError": "失败原因不明。",
+      "asyncShortReportFailed": "网络处理服务调用失败。  更多细节可查看信息面板。",
+      "errorDetails": "错误细节",
+      "resultPendingDescription": "此为使用以下输入参数在{{timestamp}}调用{{name}}流程或服务的结果。",
+      "regionTypeDescription": "待分析区域类型",
+      "regionTypeName": "区域类型",
+      "regionParameterName": "区域参数",
+      "wpsServer": "网络要素服务（WPS）服务器",
+      "wpsResult": "网络处理服务结果"
+    },
+    "wfsFeatures": {
+      "featuresGroup": "网络要素服务（WFS）服务器中的要素群组",
+      "queryErrorTitle": "查询WFS服务器时出错",
+      "queryErrorMessage": "在WFS服务器上调用GetFeature时发生错误。服务器响应结果似乎并非有效的GeoJSON文件。<p>如您是手动输入链接，请检查是否有误。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>",
+      "groupNotAvailableTitle": "群组不可用",
+      "groupNotAvailableMessage": "在WFS服务器上调用GetFeature时发生错误。<p>如您是手动输入链接，请检查是否有误。</p><p>出现错误也可能是服务器不支持<a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>。  如果您拥有服务器管理权限，请检查CORS是否已启用。如未启用，请及时启用。如您没有服务器管理权限，请联系服务器管理员，要求启用CORS。  您也可向“{{appName}}”地图团队发送电子邮件至{{email}}，要求将此服务器添加至不支持CORS的服务器列表中，由“appName”代理。</p> <p>如果链接非手动输入，出现错误可能表明您打开的群组暂时不可用，或者您的网络连接存在问题。  请尝试重新打开群组，如果问题仍无法解决，请发送电子邮件至{{email}}。</p>"
+    },
+    "remote-config-group": {
+      "name": "远程配置群组",
+      "invalid-config": "无效或未找到配置"
+    },
+    "remote-config-item": {
+      "name": "远程配置项目",
+      "invalid-config": "无效或未找到配置"
+    },
+    "ShapefileCatalogItem": {
+      "shapefile": "ESRI Shapefile"
+    }
+  },
+  "deltaTool": {
+    "titlePrefix": "变化检测",
+    "description": "此工具可将两个离散时间点所捕捉的图像之间的差异可视化。",
+    "pickLocation": "如需查看图像，请在另一边地图上选择您感兴趣的位置。",
+    "cancelBtn": "取消",
+    "generateDeltaBtn": "生成差异地图",
+    "selectedLocation": "选定位置",
+    "primaryImage": "主要图像",
+    "secondaryImage": "次要图像",
+    "pickerMessage": {
+      "pickFirst": "点击地图，选择一个点",
+      "pickAnother": "点击另一个点进行更改",
+      "pickError": "尝试解析该位置的图像时出错! 点击地图，重新选择一个点。"
+    },
+    "catalogItem": {
+      "description": "此图层可将两个离散时间点所捕捉的图像之间的差异可视化"
+    },
+    "loadingError": {
+      "title": "加载Delta工具时出错",
+      "message": "尝试从服务器加载Delta工具时发生错误。请重试。"
+    }
+  },
+  "crtb": {
+    "hazard": "此步骤用于确定当前和未来可能影响项目所在地农业体系（包括农作物、渔业/水产养殖业、畜牧业和林业）以及人口的气候相关灾害。此类灾害可能包括短期或突发冲击（如风暴、火灾或洪水等极端事件），以及缓慢形成或持续存在的长期事件（如干旱）。",
+    "vulnerability": "此步骤根据现有信息评估目标人群和体系易受气候变化不利影响的程度。个人和社区的脆弱性因财富、教育、信息获取途径、性别、年龄、残疾和健康状况等因素而异。",
+    "exposure": "此步骤根据人口分布、农业生计、物种或生态系统、环境服务和资源、基础设施方面的相关信息，评估项目区域（包括农业体系）遭受灾害影响的风险程度；或利用现有信息，评估可能受到不利影响的地点和环境中的经济、社会或文化资产。",
+    "adaptiveCapacity": "此步骤用于评估某一体系或社区面对气候变化不利影响（包括气候变化和极端情况）的应对或适应程度。需要考虑的部分因素包括可用的气候信息、土地所有权、机构支持和金融机制。"
+  },
+  "customPrintWindow": {
+    "selectTemplate": "选择打印模板",
+    "preview": "预览",
+    "noTemplate": "没有找到打印模板",
+    "printing": "打印中",
+    "loadingTemplates": "正在加载模板"
+  },
+  "helpSidebar": {
+    "title": "帮助",
+    "gettingStarted": "开始",
+    "hide": "隐藏",
+    "read": "阅读更多",
+    "tour": "快速浏览",
+    "explore": "开始探索",
+    "watch": "点击观看",
+    "changelog": "农业信息学平台变更日志"
+  },
+  "relatedSites": {
+    "title": "相关网站",
+    "description": "点击下方地图，在单独的窗口或标签中打开。"
+  },
+  "tableView": {
+    "gridSetting": "格网设置",
+    "toggleColors": "切换颜色",
+    "download": "下载",
+    "preparingDownload": "准备下载中",
+    "downloadExcel": "下载Excel",
+    "excel": "Excel",
+    "csv": "CSV",
+    "clickToFilter": "点击过滤",
+    "showing": "显示",
+    "rows": "行",
+    "noColumnsSelected": "⚠未选择任何列请在工作台上选择",
+    "ascending": "升序",
+    "descending": "降序"
+  },
+  "splashScreen": {
+    "takeTour": "快速浏览",
+    "startExploring": "开始探索",
+    "closeAndDontShow": "关闭不再显示",
+    "readMore": "阅读更多",
+    "return": "返回",
+    "preparingGuidedTour": "Preparing Guided Tour...",
+    "tourLoadingError": "Loading Error",
+    "clickToWatch": "Click to watch"
+  },
+  "guidedTour": {
+    "back": "Back",
+    "close": "Close",
+    "last": "Last",
+    "next": "Next",
+    "openDialog": "Open the dialog",
+    "skip": "Skip"
+  },
+  "other": {
+    "about": "关于",
+    "help": "帮助"
+  },
+  "timePicker": {
+    "selectYear": "Select a year",
+    "selectTime": "Select a time",
+    "selectAnHour": "Select an hour on",
+    "selectCentury": "Select a century"
+  },
+  "explorePanel": {
+    "exploreData": "搜索数据",
+    "noDataFound": "请调整搜索标准并重新尝试。",
+    "search": {
+      "searchPlaceholder": "搜索关键词",
+      "dataFormatPlaceholder": "选择数据格式",
+      "organizationPlaceholder": "选择组织",
+      "tagPlaceholder": "选择标签",
+      "reset": "重置",
+      "search": "搜索",
+      "searchIn": "搜索 ",
+      "searching": "搜索中",
+      "noResults": "无结果 ",
+      "results": "结果",
+      "found": "找到",
+      "all": "全部",
+      "home": "主页"
+    },
+    "searchResult": {
+      "itemsFound": "找到的项目"
+    }
+  }
+}

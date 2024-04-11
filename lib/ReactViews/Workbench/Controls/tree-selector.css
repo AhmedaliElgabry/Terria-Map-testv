@@ -1,0 +1,59 @@
+/*
+div.react-dropdown-tree-select
+  div.dropdown
+    a.dropdown-trigger
+      span
+    ul.tag-list
+      li.tag-item
+        input
+    div.dropdown-content
+      ul.root
+        li.node.tree
+          i.toggle.collapsed
+          label
+            input.checkbox-item
+              span.node-label
+
+*/
+
+.react-dropdown-tree-select {
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-trigger {
+    border: none !important;
+    padding: 0px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.react-dropdown-tree-select .tag-item {
+    /* list item */
+    margin: 0 0 4px 0;
+}
+
+.react-dropdown-tree-select .tag-item .search {
+    width: 282px;
+    height: 30px;
+    padding: 4px;
+    border: none;
+    box-sizing: border-box
+}
+
+
+.react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.top:after,
+.react-dropdown-tree-select .dropdown .dropdown-trigger.arrow.bottom:after {
+    color: #bbb;
+}
+
+.node label {
+    word-wrap: break-word;
+    white-space: break-spaces;
+    width: 270px;
+    display: inline-block;
+}
+
+.toggle {
+    vertical-align: top;
+}
+

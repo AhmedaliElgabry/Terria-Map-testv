@@ -1,0 +1,86 @@
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px 8px;
+  border: 1px solid transparent;
+  border-left: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  font-size: 0.8em;
+  margin-left: 7px;
+  svg {
+    padding: 0;
+    display: inline;
+  }
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  height: 5px;
+  background: #cecece;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #fff;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background-color: #467dba;
+}
+
+.disabledTab {
+  cursor: no-drop !important;
+}
+
+.disabledTab::after {
+  background-color: rgb(173, 103, 103) !important;
+}
+
+.tabset > input:checked + label {
+  border: 1px solid white;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 2px solid #667080;
+  background-color: #3f4854;
+  margin-bottom: -1px;
+  transition: background-color 1s;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+.tabset {
+  max-width: 65em;
+  border-bottom: 1px solid white;
+  margin: 4px 0;
+}

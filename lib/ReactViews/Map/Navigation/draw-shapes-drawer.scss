@@ -1,0 +1,30 @@
+@import "~terriajs-variables";
+
+.toolbar {
+  position: absolute;
+  right: 0;
+  padding-right: 35px;
+  margin-top: -33px;
+  /* border: 1px solid red; */
+  @media (max-width: $sm) {
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-right: 6px;
+  }
+}
+
+.shape-btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: #3f4854;
+}
+
+.shape-icon {
+  cursor: pointer;
+}
+
+.close-btn {
+  @media (min-width: $md) {
+    display: none;
+  }
+}

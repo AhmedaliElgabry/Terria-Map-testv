@@ -1,0 +1,78 @@
+.dropdown-inner {
+  width: 600px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.section {
+  composes: clearfix from "../../Sass/common/_base.scss";
+  width: 98%;
+  text-align: justify;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 0;
+  box-sizing: border-box;
+
+  & .siteName,
+  & .siteDescription {
+    color: #fff;
+  }
+
+  & .siteName {
+    font-size: 20px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.sub-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  max-width: 200px;
+  min-width: 50px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  margin-top: 40px;
+}
+
+.link {
+  composes: link from "../../Sass/common/_base.scss";
+  label {
+    cursor: pointer;
+    size: 1.5em;
+    color: white;
+    margin-bottom: 5px;
+  }
+}
+
+.description {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 10px 10px 15px 0px;
+  border: none;
+  height: 1px !important;
+  background: rgb(197, 197, 197);
+}

@@ -1,0 +1,233 @@
+.accordion {
+  box-sizing: border-box;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  width: 98%;
+  margin-top: 1px;
+}
+
+.accordion-xl {
+  width: 98%;
+}
+
+.accordion-select {
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.accordion-title {
+  position: relative;
+  border-top: solid #fff 0.5px;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+  border: 1px solid transparent;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.accordion-title span {
+  bottom: 0px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordion-content {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-content-x0 {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-content-xl {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-content-mid {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-content-large {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-content-small {
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content-large {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content-x0 {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content-xl {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content-mid {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content-small {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+/* Generated styles starts here */
+
+.accordion {
+  border-color: #dadada;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0 auto;
+  border-bottom: solid 0.5px #dadada;
+}
+
+.accordion-title,
+.accordion-select {
+  background-color: #434b57;
+  color: #ffffff;
+  height: 24px;
+  font-size: 14px;
+  padding: 8px 0 8px 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-select {
+  margin-bottom: -32px;
+  margin-right: 0;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+  border-bottom-color: #dadada;
+  border-right-color: transparent;
+}
+
+.accordion-select:hover + .accordion-title {
+  background-color: lighten($color: #346aa6, $amount: 0.5);
+}
+
+.accordion-select:checked + .accordion-title {
+  background-color: #346aa6;
+  padding-top: 10px;
+}
+
+.accordion-title span {
+  transform: rotate(0deg);
+  -ms-writing-mode: lr-tb;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 36px;
+}
+
+.accordion-content-small {
+  background-color: #667080;
+  color: #ffffff;
+  height: 100px;
+  margin-bottom: -100px;
+  margin-right: 0;
+  padding: 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.accordion-content {
+  background-color: #667080;
+  color: #ffffff;
+  height: 150px;
+  margin-bottom: -150px;
+  margin-right: 0;
+  padding: 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.accordion-content-mid {
+  background-color: #667080;
+  color: #ffffff;
+  height: 200px;
+  margin-bottom: -200px;
+  margin-right: 0;
+  padding: 1px 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.accordion-content-large {
+  background-color: #667080;
+  color: #ffffff;
+  height: 260px;
+  margin-bottom: -260px;
+  margin-right: 0;
+  padding: 1px 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.accordion-content-x0 {
+  background-color: #667080;
+  color: #ffffff;
+  height: 300px;
+  margin-bottom: -300px;
+  margin-right: 0;
+  padding: 1px 15px;
+  width: 100%;
+  margin-top: 0px;
+  border-bottom: 1px solid gray;
+  overflow-y: auto !important;
+}
+
+.accordion-content-xl {
+  background-color: #667080;
+  color: #ffffff;
+  height: 350px;
+  margin-bottom: -342px;
+  margin-right: 0;
+  padding: 1px 15px;
+  width: 100%;
+  margin-top: 0px;
+  border-bottom: 1px solid gray;
+  overflow-y: auto !important;
+}

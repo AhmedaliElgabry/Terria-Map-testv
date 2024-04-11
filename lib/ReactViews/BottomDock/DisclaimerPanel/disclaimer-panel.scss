@@ -1,0 +1,25 @@
+@import "~terriajs-variables";
+@import "../../../Sass/common/variables";
+@import "../../../Sass/common/buttons";
+
+.disclaimer {
+  p {
+    padding: 40px;
+  }
+}
+
+.btnDisclaimer {
+  @extend .btn, .btn-small, .btn--tertiary-dark;
+
+  border: none;
+  border-radius: 0;
+  padding: 2px 5px;
+
+  &:hover,
+  &:focus {
+    color: $text-light;
+    border: none;
+    border-radius: 0;
+    padding: 2px 5px;
+  }
+}

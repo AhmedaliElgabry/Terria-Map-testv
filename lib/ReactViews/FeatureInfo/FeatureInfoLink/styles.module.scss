@@ -1,0 +1,19 @@
+@import "~terriajs-variables";
+@import "../../../Sass/common/mixins";
+
+.linkButton {
+  composes: btn from "../../../Sass/common/_buttons.scss";
+  composes: btn-primary from "../../../Sass/common/_buttons.scss";
+  composes: btn--small from "../../../Sass/common/_buttons.scss";
+
+  width: auto;
+  float: right;
+
+  margin: 10px 1px 13px 10px;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}

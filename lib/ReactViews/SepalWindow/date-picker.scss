@@ -1,0 +1,109 @@
+@import "~terriajs-variables";
+@import "../../Sass/common/mixins";
+@import "~react-datepicker/dist/react-datepicker.css";
+// @import '/node_modules/react-tabs/style/react-tabs.scss';
+
+.more-button {
+  composes: sm-show from "../../Sass/common/_base.scss";
+  composes: btn from "../../Sass/common/_buttons.scss";
+  composes: btn-transparent from "../../Sass/common/_buttons.scss";
+  // font-size: $font-size-mid-small;
+  padding: 4px 4px;
+  text-align: center;
+  font-size: 0.8em;
+  &,
+  &:hover,
+  &:focus {
+    color: $text-light;
+    // border-left: 2px solid rgba(#ffffff, 0.7);
+    border-radius: 0px;
+  }
+
+  width: auto;
+  border-radius: 2px;
+  margin: -7px -5px 5px 0;
+  height: 25px;
+  padding: 2px 4px;
+  font-size: 0.7em;
+}
+
+.apply-button {
+  composes: btn from "../../Sass/common/_buttons.scss";
+  composes: btn-primary from "../../Sass/common/_buttons.scss";
+  font-family: "Open Sans", sans-serif;
+  // background: $dark;
+  color: white;
+  text-align: center;
+
+  width: 10%;
+  border-radius: 2px;
+  margin: 1%;
+  height: 25px;
+  padding: 2px;
+  font-size: 0.9em;
+}
+
+.more-container {
+  margin: -10px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.from-to-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: $sm) {
+    align-content: center;
+    flex-direction: column;
+  }
+}
+
+.date-picker {
+  display: inline-flex;
+  @media (max-width: $sm) {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+  }
+}
+
+.seasons-container {
+  margin: 10px 5px;
+  border-top: solid 1px gray;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-expand {
+  // the default icon styling for a dropdown is for a btn--primary, so we have to make some adjustments
+  padding-right: 5px;
+  svg {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    fill: #fff;
+    stroke: #fff;
+  }
+}
+.icon-collapse {
+  // the default icon styling for a dropdown is for a btn--primary, so we have to make some adjustments
+  padding-right: 5px;
+  svg {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    fill: currentColor;
+  }
+}

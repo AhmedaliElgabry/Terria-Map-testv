@@ -1,0 +1,82 @@
+.header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: solid 2px var(--bg-pivot-RR);
+  border-bottom: solid 2px var(--bg-pivot-RR);
+  padding: 0 10px;
+  height: 80px;
+}
+
+.header-row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: solid 2px var(--bg-pivot-RR);
+}
+
+.header-cell {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.row {
+  transition: background-color 0.3s !important;
+  border-bottom: solid 1px var(--bg-pivot-RR);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.alt-row {
+  transition: background-color 0.3s !important;
+  background-color: var(--bg-pvt-alt-row) !important;
+  border-bottom: solid 1px var(--bg-pivot-RR);
+  color: var(--fg-pvt-alt-row) !important;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.row-emphasis {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: bolder !important;
+  background-color: var(--bg-pivot-emphasis) !important;
+  color: var(--fg-pivot-emphasis) !important;
+  border: solid 1px var(--border-emphasis) !important;
+}
+
+.header-cell {
+  width: 250px;
+  height: 100%;
+  border-right: gray 1px solid;
+}
+
+.cell {
+  width: 250px;
+  height: 100%;
+  border-right: gray 1px solid;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  overflow-y: auto;
+  font-size: 11px;
+}
+
+.value-cell {
+  width: 250px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+  font-weight: bolder;
+  font-size: 12px;
+}

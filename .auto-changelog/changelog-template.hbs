@@ -1,0 +1,58 @@
+### Agroinformatics Platform (Core) Change-log
+
+Agroinformatics Platform is a project that is constantly evolving. This change-log is a record of the changes that have been made to the project. It is organized by release date and tag, and lists the changes made to the project in each release.
+
+{{#each releases}}
+  ### ([{{title}}]({{href}})) {{niceDate}}
+  ---
+
+  {{! List commits with Breaking change: ` somewhere in the message }}
+  {{#commit-list commits heading='### Breaking Changes' message='Breaking change:' exclude='chore:'  exclude='feat:' exclude='feat:' exclude='fix:' exclude='rfctr:' exclude='docs:' exclude='imprv:' exclude='test:' }}
+    {{#if (startsWith subject "docs:, imprv:, fix:, feat:, chore:, test:" ) }}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+          {{formatMessageBody message}}
+    {{/if}}
+  {{/commit-list}}
+
+  {{! List commits that add new features, but not those already listed above }}
+  {{#commit-list commits heading='### New Features' message='feat:' exclude='chore:' exclude='fix:' exclude='rfctr:' exclude='docs:' exclude='imprv:' exclude='test:' exclude='Breaking change:' }}
+    {{#if (startsWith subject "docs:, imprv:, fix:, chore:, test:, Breaking change:" ) }}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+          {{formatMessageBody message}}
+    {{/if}}
+  {{/commit-list}}
+  
+  {{! List commits with `chore:`, but not those already listed above }}
+  {{#commit-list commits heading='### Chores' message='chore:' exclude='feat:' exclude='fix:' exclude='rfctr:' exclude='docs:' exclude='imprv:'  exclude='test:' exclude='Breaking change:' }}
+    {{#if (startsWith subject "docs:, imprv:, fix:, feat:, chore:, test:, Breaking change:" ) }}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+          {{formatMessageBody message}}
+    {{/if}}
+  {{/commit-list}}
+  
+  {{! List commits with `imprv:`, but not those already listed above }}
+  {{#commit-list commits heading='### Improvements' message='imprv:' exclude='feat:' exclude='fix:' exclude='rfctr:' exclude='docs:' exclude='chore:'  exclude='test:' exclude='Breaking change:' }}
+      {{#if (startsWith subject "docs:, fix:, feat:, chore:, test:, Breaking change:" ) }}
+        - {{subject}} [`{{shorthash}}`]({{href}})
+            {{formatMessageBody message}}
+      {{/if}}
+  {{/commit-list}}
+  
+  {{! List commits with `chore:`, but not those already listed above }}
+  {{#commit-list commits heading='### Bug fixes' message='fix:' exclude='feat:' exclude='rfctr:' exclude='docs:' exclude='imprv:'  exclude='test:' exclude='Breaking change:' }}
+      {{#if (startsWith subject "docs:, feat:, chore:, test:, imprv:, Breaking change:" ) }}
+        - {{subject}} [`{{shorthash}}`]({{href}})
+            {{formatMessageBody message}}
+      {{/if}}
+  {{/commit-list}}
+  
+  {{! List commits that are not categorized above }}
+  {{#commit-list commits heading='### Other Changes' exclude='chore:' exclude='feat:' exclude='test:' exclude='docs:' exclude='Breaking change:' }}
+    {{#if (startsWith subject "docs:, imprv:, fix:, feat:, chore:, test:, Breaking change:" ) }}
+      - {{subject}} [`{{shorthash}}`]({{href}})
+          {{formatMessageBody message}}
+    {{/if}}
+  {{/commit-list}}
+
+{{/each}}
+

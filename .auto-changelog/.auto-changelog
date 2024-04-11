@@ -1,0 +1,13 @@
+{
+    "output": "./.auto-changelog/CHANGELOG.md",
+    "unreleased": false,
+    "commitLimit": false,
+    "template": "./.auto-changelog/changelog-template.hbs",
+    "sortCommits": "date-desc",
+    "hideEmptyReleases": true,
+    "hideCredit": true,
+    "prepend": false,
+    "startingVersion": "v7.50.0",
+    "handlebarsSetup": "./.auto-changelog/changelog-setup.js",
+    "package": true
+}

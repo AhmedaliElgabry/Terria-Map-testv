@@ -1,0 +1,23 @@
+.loading {
+  svg {
+    fill: white;
+    stroke: white;
+  }
+}
+
+.tile-load-progress-container {
+  margin-top: 2px;
+}
+
+.tile-load-parent {
+  width: 96%;
+  height: 7px;
+  background-color: darkgray;
+  margin: 0 2%;
+}
+
+.tile-load-progress {
+  border-right: 7px solid #fff;
+  height: 7px;
+  background-color: #346aa6;
+}
